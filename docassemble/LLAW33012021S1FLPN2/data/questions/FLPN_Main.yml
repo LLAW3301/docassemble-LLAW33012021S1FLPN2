@@ -15,17 +15,17 @@ default screen parts:
     </div>
     <div style="margin: 5px; text-align: right">
     <cite><small><i>
-    Developed by Flinders University in collaboration with SACAT
+    Developed by Flinders University
     </i></small></cite>
     </div>
     </div>
 ---
+# add all other yml files here (probably acts as if you are copying/pasting code in those files)
 include:
   - 
 ---
 objects:
-  - HAAqualifying_agencies: DAList.using(there_are_any=True, auto_gather=False)
-  - SACATlogo: DAStaticFile.using(filename='X2.01.SACAT.png')
+  - FLPNeligibleEntries: DAList.using(there_are_any=True, auto_gather=False)
   - endpoints: DADict
 ---
 features:
@@ -33,23 +33,12 @@ features:
   debug: True
   hide standard menu: False
 ---
-mandatory: True
-code: |
-  # To use a custom logo we need to set the 'logo' metadata to 
-  # some custom HTML.  The string below creates the HTML and 
-  # inserts into it the logo contained in the file SACATlogo using
-  # the python format() method 
-  HAAlogostring = '<div class="media"><img src="{}" class="mr-3" height="50"><div class="media-body"></div></div>'.format(SACATlogo.url_for())
-
-  # Once we've created the string we use set_parts() to set our new logo metadata
-  set_parts(logo=HAAlogostring)
----
 # This code drives the app
 mandatory: True
 code: |
   # HAAeligible is set in our welcome screen so we start
   # by setting that
-  if HAAeligible:
+  if FLPNacceptTerms:
     # If we're eligible then display the final screen
     # The variables called for in the final screen will trigger
     # the rest of the interview
@@ -61,92 +50,19 @@ code: |
 event: endpoints['final_screen']
 question: ""
 subquestion:  |
-  % if HAApets:
-  ### Services for Pets
+  Final screen
 
-  The agencies listed here will not accept pets.
-  
-  Contact these agencies to discuss alternative 
-  care options for your pet.
-
-  %for HAAdisplay_entry in HAAdisplay_pets:
-  ${ HAAdisplay_entry['display_record'].show() }
-  %endfor  
-  % endif
-  
-  % if HAAabor:
-  ### Services for Aboriginal or Torres Strait Islanders
-  
-  These services are specifically for Aboriginal or Torres Strait Islanders
-  
-  
-  %for HAAdisplay_entry in HAAdisplay_atsi:
-  ${ HAAdisplay_entry['display_record'].show() }
-  %endfor  
-  
-  % endif
-  
-  % if HAAgender != 'other':
-  ### Services specifically for your gender
-  
-  These services cater only towards your gender
-  
-  %for HAAdisplay_entry in HAAdisplay_gender:
-  ${ HAAdisplay_entry['display_record'].show() }
-  %endfor  
-  
-  
-  % endif
-  
-  
-  % if HAAfamily == 'singles':
-  ### Services for you
-  % else:
-  ### Services for You and Your Family
-  % endif
-  
-  These are displayed because they only allow people of your specific family situation
-  
-  %for HAAdisplay_entry in HAAdisplay_family:
-  ${ HAAdisplay_entry['display_record'].show() }
-  %endfor  
-  
-  ### Other
-  
-  Based on your answers, you might be eligible for support from the following agencies.
-
-  You should contact them as soon as you can to try an arrange emergency housing.
-  
-  %for HAAdisplay_entry in HAAdisplay_other:
-  ${ HAAdisplay_entry['display_record'].show() }
-  %endfor
-  
-  ### Community Housing
-  
-  Further information on long term accommodation can be found 
-  on the [SA.GOV.AU website](https://www.sa.gov.au/topics/housing/public-and-community-housing/list-of-housing-associations).  
-attachment code: |
-  [HAAprintout]
 buttons:
   - Exit: exit
     url: http://www.sacat.sa.gov.au
   - Restart: restart
 ---
-attachment: 
-  - name: SACAT Homelessness Advisory App
-    filename: Result Printout
-    valid formats:
-      - pdf
-    docx template file: X2.01.HAA_print_out.docx
-    variable name: HAAprintout
----
 event: endpoints['ineligible']
 question: Not Eligible
-subquestion:
-  The disclaimer has not been understood and accepted.  Please exit the
-  application or restart if you'd like to accept the disclaimer.
+subquestion: |
+  Not Eligible text
 buttons:
   - Exit: exit
-    url: https://www.sacat.sa.gov.au
+    url: 127.0.0.1
   - Restart: restart
 ---
