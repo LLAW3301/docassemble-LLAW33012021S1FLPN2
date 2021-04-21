@@ -1,0 +1,544 @@
+---
+#### Variables and their meanings #### 
+
+  # years_experience =             NUMBER OF YEARS EXPERIENCE
+  # family_law_percentage =        PERCENTAGE OF WEEK DEDICATED TO FAMILY LAW                                        WORK
+  # service_area =                 PARTS OF ADELAIDE SERVICED
+  # accredited_specialist =        ARE YOU AN ACCREDDITED SPECIALIST IN FAMILY                                      LAW
+  # qualifications =               WHAT ARE YOUR FAMILY LAW RELATED                                                  QUALIFICATIONS
+  # independant_childrens_lawer =  ARE YOU AN INDEPENDANT CHILDRENS'S LAWYER?
+  # fees scale =                   DO YOU ONLY CHARGE SCALE FEELS?
+      # if no, hourly_fees =       WHAT IS YOUR HOURLY RATE INCLUDING GST
+  # fees fixed =                   DO YOU HAVE FIXED FEES AVAILABLE FOR ALL WORK                                    OR SOME ITEMS OF WORK?
+      # if yes, fixed_fees_info =  PLEASE EXPLAIN FURTHER
+  # free consult =                 DO YOU PROVIDE A FIRST INITIAL CONSULT FREE OF                                    CHARGE?
+  # low_income_options =           DO YOU HAVE ANY SPECIAL FEE ARRANGERMENTDS FOR                                    THOSE ON LOW INCOME OR UNMPLOYED (E.G.                                            DISCOUNTS OR PRO BONO)
+  # defer_fees_property =          UNDER WHAT CIRCUMSTANCES WOULD YOU DEFER FEES                                    ON A PROPERTY SETTLEMENT MATTER?
+  # defer_fees_parenting =         UNDER WHAT CIRCUMSTANCES WOULD YOU DEFER FEES                                    ON A PARENTING MATTER?
+  # low_income_offering =          DESCRIBE WHAT SERVICE YOU CAN OFFER PARTIES ON                                    A LOW INCOME WITH LOW NET ASSETS WHO HAVE                                        AGREED AT MEDIATION TO A PROPERTY SETTLEMENT                                      AND NEED CONSENT MINUTES DRAFTED.
+  # legal_services_comm =          ARE YOU ON THE LEGAL SERVICES COMMISSION                                          PANEL FOR FAMILY LAW MATTERS?
+  # legal_aid =                    ARE YOU AVAILABLE TO DO LEGAL AID WORK?
+  # languages =                    WHAT LANGUAGES DO YOU SPEAK/WHAT SERVICES CAN                                    YOU OFFER
+  # AUSLAN =                       DO YOU KNOW AUSLAN SIGN LANGUAGE?
+  # experience
+     # family_ dispute_resolution = DO YOU HAVE EXPERIENCE AS A FAMILY DISPUTE                                       RESOLUTION PRACTITIONER?
+      # family_trusts =             DO YOU PRACTICE IN THE AREA OF FAMILY TRUSTS?
+      # trusts_and_estates =        ARE YOU A MEMBER OF THE SOCIETY OF TRUST &                                       ESTATE PRACTITIONERS?
+      # company_business_law =      ARE YOU EXPERIENCED IN COMPANY AND BUSINESS                                       LAW?
+      # collaboartive_practice =    ARE YOU EXPERIENCED IN COLLABORATIVE                                             PRACTICE?
+  # notes =                         ANY OTHER INFORMATION
+
+variable name: FLPN2_lawyerlist
+use objects: true
+data:
+  - lawyer: Kerry Antoniou
+    law_firm: Alpha Family Lawyers
+    address: Level 3, 97 Pirie Street, Adelaide, South Australia 5000
+    email: contact@alphafamilylawyers.com.au
+    phone: 0871294411
+    website: https://www.alphafamilylawyers.com.au
+    service_area: Adelaide
+    years_experience: 18
+    family_law_percentage_min: 80
+    family_law_percentage_max: 100
+    accredited_specialist: false
+    qualifications: Law Degree from Adelaide University. I taught family law (Undergraduate Law Degree) for 15 years at The University of Adelaide and received a Executive Deans Award from the University for excellence in Teaching in 2016. I am currently teaching GDLP Family Law Unit (and have for the last 18 years) and am the unit coordinator. 
+    independant_childrens_lawyer: true
+    fees:
+      scale: false
+      fixed: false
+    hourly_fees: 550
+    fixed_fees_info: I am an ICL and therefore on the Panel
+    free_consult: false
+    low_income_options: Half hour free with first consult if referral through Pathways Directory
+    defer_fees_property: Will depend on the circumstances of the client's matter
+    defer_fees_parenting: If there is a property settlement matter with childrens matter
+    low_income_offering: n/a
+    legal_services_comm: true
+    legal_aid: n/a
+    languages: Greek
+    Auslan: false
+    experience:
+      family_dispute_resolution: false
+      family_trusts: false
+      trusts_and_estates: false
+      company_business_law: false
+      collaborative_practice: false
+     notes: Small law firm that can tailor specific needs to the client
+  - lawyer: Andrew Barnes
+    law_firm: BBS Family Lawyers & Mediators
+    address: Level 4/420 King William Street, Adelaide, South Australia, 5000
+    email: andrew.barnes@bbslawyers.com.au
+    phone: 0881102300
+    website: https://bbslawyers.com.au/
+    service_area: #TBA check website
+    years_experience: 20+
+    family_law_percentage_min: 80
+    family_law_percentage_max: 100
+    accredited_specialist: false
+    qualifications: Bachelor of Law from the University of Adelaide
+    independant_childrens_lawyer: false
+    fees:
+      scale: false
+      fixed: false
+    hourly_fees: Not Provided
+    fixed_fees_info: Not provided
+    free_consult: false
+    low_income_options: Not Provided
+    defer_fees_property: Not Provided
+    defer_fees_parenting: Not Provided
+    low_income_offering: Not Provided
+    legal_services_comm: false
+    legal_aid: false
+    languages: Not Provided
+    Auslan: false
+    experience:
+      family_dispute_resolution: false
+      family_trusts: true
+      trusts_and_estates: false
+      company_business_law: false
+      collaborative_practice: false
+     notes: n/a
+  - lawyer: Sophie Bell
+    law_firm: BBS Lawyers
+    address: Level 4, 420 King Williams Street, Adelaide, SA 5000
+    email: admin@bbslawyers.com.au
+    phone: 0881102300
+    website: https://bbslawyers.com.au/
+    service_area: #TBA check website
+    years_experience: 8
+    family_law_percentage_min: 80
+    family_law_percentage_max: 100
+    accredited_specialist: false
+    qualifications: LLB, BComm, Member of Law Society of South Australia, Member of Family Law Section of the Law Council of Australia
+    independant_childrens_lawyer: 
+    fees:
+      scale: false
+      fixed: false
+    hourly_fees: 418
+    fixed_fees_info: N/A
+    free_consult: false
+    low_income_options: not provided
+    defer_fees_property: not provided
+    defer_fees_parenting: not provided
+    low_income_offering: not provided
+    legal_services_comm: false
+    legal_aid: false
+    languages: N/A
+    Auslan: false
+    experience:
+      family_dispute_resolution: false
+      family_trusts: false
+      trusts_and_estates: false
+      company_business_law: false
+      collaborative_practice: false
+     notes: Doyles Guide: 2019 & 2020 Rising Star. 2019 & 2020 First Tier Family Law Firm.
+  - lawyer: Madeleine Betro
+    law_firm: Stanley & Co
+    address: 75 Angas Street, Adelaide, South Australia 5000
+    email: madeleine@stanlaw.com.au
+    phone: 0870016135
+    website: https://www.stanlaw.com.au/
+    service_area: Adelaide and Christies Beach 
+    years_experience: 4
+    family_law_percentage_min: 80
+    family_law_percentage_max: 100
+    accredited_specialist: false
+    qualifications: not provided
+    independant_childrens_lawyer: false
+    fees:
+      scale: false
+      fixed: true
+    hourly_fees: 429
+    fixed_fees_info: Fixed Fees for Consent Orders, Mediation, Parenting Plans, court documents 
+    free_consult: true
+    low_income_options: not provided
+    defer_fees_property: n/a
+    defer_fees_parenting: n/a
+    low_income_offering: n/a
+    legal_services_comm: false
+    legal_aid: false
+    languages: n/a
+    Auslan: false
+    experience:
+      family_dispute_resolution: false
+      family_trusts: true
+      trusts_and_estates: false
+      company_business_law: false
+      collaborative_practice: true
+     notes: n/a
+  - lawyer: Annette Comley
+    law_firm: Comley Legal
+    address: 146 Gilles Street, Adelaide, South Australia 5000
+    email: admin@comleylegal.com.au
+    phone: 0872265051
+    website: https://comleylegal.com.au
+    service_area: Adelaide Metropolitan, Broken Hill
+    years_experience: 8
+    family_law_percentage_min: 80
+    family_law_percentage_max: 100
+    accredited_specialist: false
+    qualifications: Master of Laws (Family Law), Nationally Accredited Mediator, Collaborative Practitioner
+    independant_childrens_lawyer: true
+    fees:
+      scale: false
+      fixed: true
+    hourly_fees: $420 plus GST
+    fixed_fees_info: Fixed fee options or deferred payment of fees can be discussed 
+    free_consult: false
+    low_income_options: Payment plans can be discussed. Legal Aid options can be discussed. Reduced fee options can be discussed.
+    defer_fees_property: Once discovery has been provided and where it is clear there is an entitlement to a division of property settlement 
+    defer_fees_parenting: If parenting is combined with property settlement deferred payment options can be discussed 
+    low_income_offering: Drafting application and consent orders without appearing on Court file or communicating with other party to reduce cost
+    legal_services_comm: true
+    legal_aid: true
+    languages: n/a
+    Auslan: false
+    experience:
+      family_dispute_resolution: false
+      family_trusts: false
+      trusts_and_estates: false
+      company_business_law: false
+      collaborative_practice: true
+     notes: There are three solicitors at my firm with varying experience. Work can be shared to reduce fees where possible.
+  - lawyer: Jeremy Culshaw
+    law_firm: Culshaw Miller Lawyers 
+    address: 49 Hindmarsh Square, Adelaide, South Australia 5000
+    email: jeremy.culshaw@culshawmiller.com.au
+    phone: landline 0884640033 mobile 0411698475
+    website: https://www.culshawmiller.com.au
+    service_area: #TBA check website
+    years_experience: 20+
+    family_law_percentage_min: 80
+    family_law_percentage_max: 100
+    accredited_specialist: true
+    qualifications: Member of Family Law Council 2006 to 2012 (section 115 Family Law Act)
+    independant_childrens_lawyer: false
+    fees:
+      scale: false
+      fixed: false
+    hourly_fees: $440 to $660 depending on nature of matter
+    fixed_fees_info: Sam Lehman of our firm
+    free_consult: Not answered
+    low_income_options: Refer to associated business Accelerate Family Law
+    defer_fees_property: With appropriate security
+    defer_fees_parenting: None
+    low_income_offering: Refer to our associate business Accelerate Family Law
+    legal_services_comm: true
+    legal_aid: not answered
+    languages: Can utilise translating and interpreting services
+    Auslan: false
+    experience:
+      family_dispute_resolution: false
+      family_trusts: true
+      trusts_and_estates: true
+      company_business_law: true
+      collaborative_practice: true
+     notes: Nothing scares me anymore
+  - lawyer: Linda Gross
+    law_firm: L.G. Lawyers
+    address: 3/10 Gawler Street, Mount Barker, South Australia 5251
+    email: admin@lglawyers.com.au
+    phone: 0414825555
+    website: https://www.lglawyers.com.au
+    service_area: Mount Barker
+    years_experience: 20+
+    family_law_percentage_min: 80
+    family_law_percentage_max: 100
+    accredited_specialist: false
+    qualifications: N/A
+    independant_childrens_lawyer: true
+    fees:
+      scale: false
+      fixed: true
+    hourly_fees: 440
+    fixed_fees_info: Fixed fees can be discussed on a matter by matter basis with clients
+    free_consult: true
+    low_income_options: Legal Aid is welcomed
+    defer_fees_property: In circumstances where monies will be available to pay legal fees at the end on the matter
+    defer_fees_parenting: N/A
+    low_income_offering: Can be discussed on a matter by matter basis with clients
+    legal_services_comm: true
+    legal_aid: true
+    languages: N/A
+    Auslan: false
+    experience:
+      family_dispute_resolution: false
+      family_trusts: false
+      trusts_and_estates: false
+      company_business_law: false
+      collaborative_practice: false
+     notes: N/A
+  - lawyer: Sam Lehman
+    law_firm: Culshaw Miller Lawyers
+    address: 49 Hindmarsh Square, Adelaide, South Australia 5000
+    email: sam.lehman@culshawmiller.com.au
+    phone: 0884640033
+    website: https://www.culshawmiller.com.au
+    service_area: not provided
+    years_experience: 7
+    family_law_percentage_min: 80
+    family_law_percentage_max: 100
+    accredited_specialist: false
+    qualifications: Bachelor of Laws, Graduate Diploma of Legal Practice
+    independant_childrens_lawyer: false
+    fees:
+      scale: false
+      fixed: false
+    hourly_fees: 418
+    fixed_fees_info: n/a
+    free_consult: false
+    low_income_options: n/a
+    defer_fees_property: n/a
+    defer_fees_parenting: n/a
+    low_income_offering: Our service, Accelerate Family Law, can offer low cost, fixed fee drafting of documents.
+    legal_services_comm: true
+    legal_aid: false
+    languages: n/a
+    Auslan: false
+    experience:
+      family_dispute_resolution: false
+      family_trusts: false
+      trusts_and_estates: false
+      company_business_law: false
+      collaborative_practice: false
+     notes: n/a
+  - lawyer: Shaya Lewis-Dermody
+    law_firm: The Family Law Project
+    address: 5/19 Market Street, Adelaide, South Australia 5000
+    email: lawyers@familylawproject.com.au
+    phone: 0423267644
+    website: https://www.familylawproject.com.au
+    service_area: #TBA - need to check on website
+    years_experience: 18
+    family_law_percentage_min: 80
+    family_law_percentage_max: 100
+    accredited_specialist: false
+    qualifications: Independent Childrens Lawyer, specialist Family Lawyer
+    independant_childrens_lawyer: true
+    fees:
+      scale: false
+      fixed: true
+    hourly_fees: n/a
+    fixed_fees_info: n/a
+    free_consult: true
+    low_income_options: Legal aid
+    defer_fees_property: When a party anticipates settlement monies we can consider deferring fees
+    defer_fees_parenting: When a party anticipates settlement monies we can consider deferring fees
+    low_income_offering: Unbundled fixed fee services including drafting, settling documents and/or advice
+    legal_services_comm: true
+    legal_aid: true
+    languages: Italian, Arabic
+    Auslan: false
+    experience:
+      family_dispute_resolution: false
+      family_trusts: false
+      trusts_and_estates: false
+      company_business_law: false
+      collaborative_practice: false
+     notes: n/a
+  - lawyer: Natalie Lloyd
+    law_firm: Scammell & Co
+    address: 86 Franklin Street, Adelaide, South Australia 5000
+    email: nlloyd@scammell.com.au
+    phone: 0882126875
+    website: https://www.scammell.com.au
+    service_area: Gawler, Port Adelaide, Walkerville, Adelaide Metropolitan Area
+    years_experience: 3
+    family_law_percentage_min: 80
+    family_law_percentage_max: 100
+    accredited_specialist: false
+    qualifications: Bachelor of Laws, Graduates Diploma in Legal Practice
+    independant_childrens_lawyer: false
+    fees:
+      scale: false
+      fixed: true
+    hourly_fees: not provided
+    fixed_fees_info: Divorce
+    free_consult: true
+    low_income_options: not provided
+    defer_fees_property: Where client is due to receive adequate lump sum payment at conclusion of property settlement matter
+    defer_fees_parenting: Where parenting matter is coupled with eligible property settlement matter
+    low_income_offering: not provided
+    legal_services_comm: false
+    legal_aid: false
+    languages: n/a
+    Auslan: false
+    experience:
+      family_dispute_resolution: true
+      family_trusts: true
+      trusts_and_estates: false
+      company_business_law: true
+      collaborative_practice: true
+     notes: n/a
+  - lawyer: Sam Ngai
+    law_firm: Scammell & Co.
+    address: 86 Franklin Street, Adelaide, South Australia 5000
+    email: sngai@scammell.com.au
+    phone: 0882126875
+    website: https://www.scammell.com.au
+    service_area: All Adelaide Metropolitan Areas
+    years_experience: 12
+    family_law_percentage_min: 80
+    family_law_percentage_max: 100
+    accredited_specialist: false
+    qualifications: Bachelor of Laws from University of Adelaide in 2007; Diploma of Legal Practice from the Law Society of South Australia in 2007; Admitted to practice in 2008.
+    independant_childrens_lawyer: false
+    fees:
+      scale: false
+      fixed: true
+    hourly_fees: 462
+    fixed_fees_info: Fixed-fee divorce matters are available but contingent on both parties being available and in agreement on settlement terms.
+    free_consult: true
+    low_income_options: If sufficient equity within the pool, we can defer our fees to final settlement.
+    defer_fees_property: Sufficient equity in asset pool for anticipated work.  Even if it is a small pool, if our instructions are narrow like preparing consent orders, we can offer a deferral of our fees.
+    defer_fees_parenting: Without a property settlement, we cannot defer our fees for a purely parenting matter.  In some circumstances, we can offer a payment plan or provide ad hoc advice (ie. we give recommendations on how a party should conduct their matter and aid in some legal drafting).
+    low_income_offering: Yes, can limit instructions to simply drafting Minutes of Order, and/or Application.  In those situations, we will not sign the lawyer’s certificate in the application, and will not be giving advice on the settlement itself. Possible payment plan.
+    legal_services_comm: false
+    legal_aid: false
+    languages: Interperters can be engaged
+    Auslan: false
+    experience:
+      family_dispute_resolution: false
+      family_trusts: false
+      trusts_and_estates: false
+      company_business_law: false
+      collaborative_practice: false
+     notes: Scammell & Co. has an experienced Wills and Estate Planning team who can provide legal advice and services in the area of Family Trusts,
+  - lawyer: Jacinta Robinson
+    law_firm: Varga Lawyers
+    address: Suite 405, Level 4, 22 Grenfell Street, Adelaide, South Australia 5000
+    email: jacinta@varga.com.au
+    phone: 0432255626
+    website: https://www.varga.com.au/
+    service_area: not provided
+    years_experience: 2
+    family_law_percentage_min: 60
+    family_law_percentage_max: 80
+    accredited_specialist: false
+    qualifications: not provided
+    independant_childrens_lawyer: false
+    fees:
+      scale: true
+      fixed: false
+    hourly_fees: Not Provided
+    fixed_fees_info: n/a
+    free_consult: false
+    low_income_options: Payment via RapidPay
+    defer_fees_property: n/a
+    defer_fees_parenting: n/a
+    low_income_offering: n/a
+    legal_services_comm: false
+    legal_aid: false
+    languages: Indonesian, Spanish
+    Auslan: false
+    experience:
+      family_dispute_resolution: false
+      family_trusts: false
+      trusts_and_estates: false
+      company_business_law: false
+      collaborative_practice: false
+     notes: n/a
+  - lawyer: Amra Sabou
+    law_firm: Stanley & Co
+    address: 75 Angas Street, Adelaide, South Australia 5000
+    email: amra@stanlaw.com.au
+    phone: 0870016135
+    website: https://www.stanlaw.com.au/
+    service_area: Adelaide, Christies Beach
+    years_experience: 12
+    family_law_percentage_min: 80 
+    family_law_percentage_max: 100
+    accredited_specialist: false
+    qualifications: n/a
+    independant_childrens_lawyer: false
+    fees:
+      scale: false
+      fixed: true
+    hourly_fees: 462
+    fixed_fees_info: We provide fixed fees on all services. 
+    free_consult: true
+    low_income_options: n/a
+    defer_fees_property: If our client requests to pay at the end of the matter. Asset rich / cash poor, end of matter arrangements
+    defer_fees_parenting: as above at 19, if also acting on property settlement matter.
+    low_income_offering: Yes for drafting consent minutes of order and we can unbundle, if required. 
+    legal_services_comm: true
+    legal_aid: false
+    languages: n/a
+    Auslan: false
+    experience:
+      family_dispute_resolution: true
+      family_trusts: true
+      trusts_and_estates: false
+      company_business_law: false
+      collaborative_practice: true
+     notes: We have an approachable, no-nonsense approach that sets us apart from the rest. Our fixed fees provides our clients with peace of mind and financial certainty.
+  - lawyer: Larissa Stevens
+    law_firm: Stevens Law
+    address: Level 4, 195 Victoria Square, Adelaide, South Australia 5000
+    email: larisda@stevenslaw.com.au
+    phone: 0884700313
+    website: https://www.stevenslaw.com.au
+    service_area: Adelaide
+    years_experience: 20+
+    family_law_percentage_min: 80
+    family_law_percentage_max: 100
+    accredited_specialist: false
+    qualifications: LL. B and LL.M
+    independant_childrens_lawyer: false
+    fees:
+      scale: false
+      fixed: true
+    hourly_fees: $400-$500
+    fixed_fees_info: Amicable Consent Orders $3,300, Negotiated Consent Orders $3,300 - $5,500, divorces $550-$1,100
+    free_consult: true
+    low_income_options: Legal aid, Deferred Payment, and Payment Plans
+    defer_fees_property: Suitable Equity
+    defer_fees_parenting: n/a
+    low_income_offering: Fixed fee estimates
+    legal_services_comm: true
+    legal_aid: true
+    languages: n/a
+    Auslan: no
+    experience:
+      family_dispute_resolution: true
+      family_trusts: false
+      trusts_and_estates: false
+      company_business_law: false
+      collaborative_practice: false
+     notes: n/a
+  - lawyer: Sharon Thomas
+    law_firm: BBS Family Lawyers & Mediators
+    address: Level 4/420 King William Street, Adelaide, South Australia 5000
+    email: sharon.thomas@bbslawyers.com.au
+    phone: 0881102300
+    website: https://bbslawyers.com.au/
+    service_area: #TBA CHECK WEBSITE
+    years_experience: 20+
+    family_law_percentage_min: 80
+    family_law_percentage_max: 100
+    accredited_specialist: false
+    qualifications: Bachelor of Law from the University of Adelaide
+    independant_childrens_lawyer: false
+    fees:
+      scale: false
+      fixed: false
+    hourly_fees: not provided
+    fixed_fees_info: 
+    free_consult: false
+    low_income_options: not provided
+    defer_fees_property: not provided
+    defer_fees_parenting: not provided
+    low_income_offering: not provided
+    legal_services_comm: false
+    legal_aid: false
+    languages: n/a
+    Auslan: false
+    experience:
+      family_dispute_resolution: false
+      family_trusts: true
+      trusts_and_estates: false
+      company_business_law: false
+      collaborative_practice: false
+     notes: n/a
+---

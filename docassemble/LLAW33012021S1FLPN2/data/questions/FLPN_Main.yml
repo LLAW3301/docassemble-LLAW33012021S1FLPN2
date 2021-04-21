@@ -22,7 +22,8 @@ default screen parts:
 ---
 # add all other yml files here (probably acts as if you are copying/pasting code in those files)
 include:
-  - 
+  - FLPN_questions.yml
+  - FLPN_DirectoryEntries.yml
 ---
 objects:
   - FLPNeligibleEntries: DAList.using(there_are_any=True, auto_gather=False)
@@ -63,6 +64,6 @@ subquestion: |
   Not Eligible text
 buttons:
   - Exit: exit
-    url: 127.0.0.1
+    url: 
   - Restart: restart
 ---
