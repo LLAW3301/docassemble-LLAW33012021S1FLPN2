@@ -1,8 +1,123 @@
 ---
-#add question to set FLPNregion (choices between ones from https://en.wikipedia.org/wiki/Regions_of_South_Australia
-# "What location are you in?"
+question: Family Law Directory
+subquestion: |
+  
+  Welcome to the **Family Law Directory**. This application will assist you in comparing South Australian Family Lawyers. [BR] [BR]
+  
+  
+  <div class='disclaimer'> <b>Privacy Statement</b> [BR]
+  <i>Information you provide in this application will not be stored. All responses are anonymous. Your responses will be used for the sole purpose of helping you find a suitable family lawyer.</i> </div> [BR]
+  
+  
+  <div class='disclaimer'> <b>Disclaimer</b> [BR] <i>This application is relying on the information provided by the lawyers themselves. We cannot guarantee the accuracy of any information provided. The results of this application should not be taken as a recommendation. Relationships (SA) cannot be held responsible for any issues that may arise. This application does not provide legal advice. It is merely a guide, and users are encouraged to make their own enquiries with the listed lawyers. Alternatively, enquiries can be made with <a href="https://www.lawsocietysa.asn.au">The Law Society of South Australia</a> or the <a href="https://lsc.sa.gov.au">Legal Services Commission of South Australia</a>.</i> </div> [BR]
 
-#add question to set FLPNotherLanguage "Are you seeking a lawyer who speaks a language other than Australian?" (don't need specifics, only whether or not)
-
-question: ""
+  **Do you agree to these terms?**
+  
+buttons:
+  - Yes, I agree: continue
+  - No, I do not agree: exit
+    url: https://www.rasa.org.au/
 ---
+question: |
+  What region are you located in?
+subquestion: |
+  Click the :question: icon to see what areas are included in each region.
+fields:
+  no label: FLPNregion
+  datatype: radio
+  choices:
+    - Adelaide Hills: 1
+      help: |
+        - Adelaide Hills Council
+        - District Council of Mount Barker
+    - Barossa Light and Lower North: 2
+      help: |
+        - Town of Gawler
+        - Adelaide Plains Council
+        - Barossa Council
+        - Light Regional Council
+    - Eastern Adelaide: 3
+      help: |
+        - City of Adelaide
+        - City of Burnside
+        - City of Campbelltown
+        - City of Norwood Payneham & St Peters
+        - City of Prospect
+        - City of Unley
+        - Town of Walkerville
+    - Eyre Western: 4
+      help: |
+        - District Council of Ceduna
+        - District Council of Cleve
+        - District Council of Elliston
+        - District Council of Franklin Harbour
+        - District Council of Kimba
+        - District Council of Lower Eyre Peninsula
+        - City of Port Lincoln
+        - District Council of Streaky Bay
+        - District Council of Tumby Bay
+        - Wudinna District Council
+        - City of Whyalla
+    - Far North: 5
+      help: |
+        - City of Port Augusta
+        - Flinders Ranges Council
+        - District Council of Coober Pedy
+        - Municipal Council of Roxby Downs
+    - Fleurieu and Kangaroo Island: 6
+      help: |
+        - Alexandrina Council
+        - City of Victor Harbor
+        - Kangaroo Island Council
+        - District Council of Yankalilla
+    - Limestone Coast: 7
+      help: |
+        - City of Mount Gambier
+        - District Councils of Grant, Kingston, Robe, Tatiara, and Naracoorte Lucindale
+        - Wattle Range Council
+    - Murrary and Mallee: 8
+      help: |
+        - Berri Barmera Council
+        - Coorong District Council
+        - District Council of Karoonda East Murray
+        - District Council of Loxton Waikerie
+        - Mid Murray Council
+        - Southern Mallee District Council
+        - Renmark Paringa Council
+        - Rural City of Murray Bridge
+    - Northern Adelaide: 9
+      help: |
+        - City of Playford
+        - City of Salisbury
+        - City of Tea Tree Gully
+        - East half of City of Port Adelaide Enfield
+    - Southern Adelaide: 10
+      help: |
+        - City of Holdfast Bay
+        - City of Marion
+        - City of Mitcham
+        - City of Onkaparinga
+    - Western Adelaide: 11
+      help: |
+        - City of Charles Sturt
+        - City of West Torrens
+        - Western half of the City of Port Adelaide Enfield
+    - Yorke and Mid North: 12
+      help: |
+        - District Council of Clare and Gilbert Valleys
+        - Regional Council of Goyder
+        - District Council of Mount Remarkable
+        - Northern Areas Council
+        - District Council of Orroroo Carrieton
+        - District Council of Peterborough
+        - Port Pirie Regional Council
+        - Wakefield Regional Council
+        - District Council of Barunga West
+        - District Council of the Copper Coast
+        - Yorke Peninsula Council.
+---
+question: |
+  Do you require a lawyer who speaks a language other than English?
+yesno: FLPNlanguage
+---
+  

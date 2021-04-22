@@ -45,7 +45,7 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
 setup(name='docassemble.LLAW33012021S1FLPN2',
       version='0.0.1',
       description=('A docassemble extension.'),
-      long_description='Provide a short description of your app here.',
+      long_description='## TODO\r\n* Add wording and entry fields for questions specified in FLPN_questions.yml\r\n',
       long_description_content_type='text/markdown',
       author='Mark Ferraretto',
       author_email='mark.ferraretto@flinders.edu.au',

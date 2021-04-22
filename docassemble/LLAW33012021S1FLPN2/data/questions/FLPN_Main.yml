@@ -1,4 +1,10 @@
-# This is the main file for the Lawyer Directory App (FLPN)
+---
+objects:
+  - MJFlogo: DAStaticFile.using(filename='FLPN_logo2.png')
+---
+mandatory: True
+code: |
+  set_parts(logo='<img src="' + MJFlogo.url_for() + '" style="height: 60px;">')#
 ---
 metadata:
   title: |
@@ -15,18 +21,17 @@ default screen parts:
     </div>
     <div style="margin: 5px; text-align: right">
     <cite><small><i>
-    Developed by Flinders University
+    Developed by Flinders University in collaboration with Relationships Australia (SA)
     </i></small></cite>
     </div>
     </div>
 ---
-# add all other yml files here
+# add all other yml files here (probably acts as if you are copying/pasting code in those files)
 include:
-  - FLPN_Welcome.yml
-# Make sure not to change order, otherwise welcome screen might not be run first
   - FLPN_Questions.yml
   - FLPN_DirectoryEntries.yml
-#  - FLPN_design.yml
+  - FLPN_design.yml
+  - FLPN_display_output.yml
 ---
 objects:
   - FLPNeligibleEntries: DAList.using(there_are_any=True, auto_gather=False)
@@ -40,38 +45,60 @@ features:
 # This code drives the app
 mandatory: True
 code: |
-  # make empty DAlist
-  FLPNeligibleEntries.clear()
-  
-  for entry in FLPN2_lawyerlist:
-    # set all entries to eligible by default
-    entry["eligible"] = True
-    
-    # process for eligibility (placeholder right now)
-    if entry["lawyer"] == "Kerry Antoniou":
-      entry["eligible"] = False
-    # need to add in process to check if candidate is in correct area/does/doesn't need a language other than English
-    
-    # when entry ends this process as "eligible" append to eligibleEntries list
-    if entry["eligible"] == True:
-      FLPNeligibleEntries.append(entry)
-  
-  FLPNeligibleEntries.gathered = True
-  endpoints['final_screen']
+  # HAAeligible is set in our welcome screen so we start
+  # by setting that
+  if FLPNacceptTerms:
+    # If we're eligible then display the final screen
+    # The variables called for in the final screen will trigger
+    # the rest of the interview
+    endpoints['final_screen']
+  else:
+    # If we're not eligible go to the ineligible endpoint
+    endpoints['ineligible']
 ---
 event: endpoints['final_screen']
 question: ""
 subquestion:  |
-  Final screen (display output here)
+  Final screen
   
-  number: ${ FLPNeligibleEntries.number() }
+#3 different options
+# # # 1) launage + area
+
+     <div class='resultstitle'> BASED ON YOUR RESPONSES </div> [BR]
+   Here is a list of family lawyers in your area, who may be able to provide services in languages other than English. Contact the lawyers below for more information.
+   
+   <div class='disclaimer'>The information below is what has been provided by the lawyers themselves. We cannot guaruntee the accuracy of this information, and cannot be held responsible for any issues that may arise with their engagement.</div>
+   
+      &nbsp; | &nbsp;
+   ---------------|----------------
+   <span class='agencytable'> ${ single_paragraph(template) }</span> | &nbsp;
   
-  %for entry in FLPNeligibleEntries:
-  ${ entry["lawyer"] } <br>
-  %endfor
+# # # 2) just area
+  <div class='resultstitle'> BASED ON YOUR RESPONSES </div> [BR]
+   Here is a list of family lawyers in your area. Contact the lawyers below for more information.
+   
+   <div class='disclaimer'>The information below is what has been provided by the lawyers themselves. We cannot guaruntee the accuracy of this information, and cannot be held responsible for any issues that may arise with their engagement.</div>
+   
+      &nbsp; | &nbsp;
+   ---------------|----------------
+   <span class='agencytable'> ${ single_paragraph(template) }</span> | &nbsp;
+   
+   <div class='resultstitle'> LINKS TO MORE INFORMATION </div>
+   <center> [The Law Society of South Australia](https://www.lawsocietysa.asn.au)</center>
+   <center>[Legal Services Commission of South Australia](https://lsc.sa.gov.au)</center> [BR]
+
+# # # 3) No eligible lawyers found
+
+
+# # # DISPLAY NO MATTER WHAT
+   <div class='resultstitle'> LINKS TO MORE INFORMATION </div>
+   <center> [The Law Society of South Australia](https://www.lawsocietysa.asn.au)</center>
+   <center>[Legal Services Commission of South Australia](https://lsc.sa.gov.au)</center> [BR]
+attachment code: |
+  FLPNprintout
 buttons:
   - Exit: exit
-    url: http://example.com/
+    url: http://www.sacat.sa.gov.au
   - Restart: restart
 ---
 event: endpoints['ineligible']
@@ -80,6 +107,6 @@ subquestion: |
   Not Eligible text
 buttons:
   - Exit: exit
-    url: http://example.com/
+    url: 
   - Restart: restart
 ---

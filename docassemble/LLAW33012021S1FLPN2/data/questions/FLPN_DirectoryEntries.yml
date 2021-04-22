@@ -23,15 +23,15 @@ data:
     phone: 08 7129 4411
     website: https://www.alphafamilylawyers.com.au
     experience: |
-        - 18 Years experience [BR]
-        - 80-100% work week spent on family law [BR]
-        - Independant Children's Lawyer [BR]
-        - Member of the Legal Services Commission [BR]
-        - Can speak Greek [BR]
+        <li>18 Years experience</li>
+        <li>80-100% work week spent on family law</li>
+        <li>Independant Children's Lawyer</li>
+        <li>Member of the Legal Services Commission</li>
+        <li>Can speak Greek</li>
     fees: |
-        - $550 per hour [BR]
-        - Free half hour consult [BR]
-        - Can defer frees on property settlement matters [BR]
+        <li>$550 per hour</li>
+        <li>Free half hour consult</li>
+        <li>Can defer frees on property settlement matters</li>
     service_area:
         - 3
     language: true
@@ -42,11 +42,11 @@ data:
     phone: 08 8110 2300
     website: https://bbslawyers.com.au/
     experience: |
-      - 20+ Years Experience [BR]
-      - 80-100% work week spent on family law [BR]
-      - Experience in family trusts [BR]
+      <li>20+ Years Experience</li>
+      <li>80-100% work week spent on family law</li>
+      <li>Experience in family trusts</li>
     fees: |
-      Fee information not provided. Please contact lawyer for further details.
+      Fee information not provided. Please contact lawyer for further details. [BR]
     service_area:
       - 3
     language: false
@@ -57,14 +57,14 @@ data:
     phone: 08 8110 2300
     website: https://bbslawyers.com.au/
     experience: |
-      - 8 Years experience [BR]
-      - 80-100% work week spent on family law [BR]
-      - Member of Law Society of South Australia [BR]
-      - Member of Family Law Section of the Law Council of Australia [BR]
-      - Doyles Guide: 2019 & 2020 Rising Star [BR]
-      - 2019 & 2020 First Tier Family Law Firm [BR]
+      <li>8 Years experience</li>
+      <li>80-100% work week spent on family law</li>
+      <li>Member of Law Society of South Australia</li>
+      <li>Member of Family Law Section of the Law Council of Australia</li>
+      <li>Doyles Guide: 2019 & 2020 Rising Star</li>
+      <li>2019 & 2020 First Tier Family Law Firm</li>
     fees: |
-      - $418 per hour [BR]
+      <li>$418 per hour</li>
     service_area:
       - 3
     language: false
@@ -75,14 +75,14 @@ data:
     phone: 08 7001 6135
     website: https://www.stanlaw.com.au/
     experience: |
-      - 4 Years experience [BR]
-      - 80-100% work week spent on family law. [BR]
-      - Experience in trusts [BR]
-      - Experience in collaborative practice [BR]
+      <li>4 Years experience</li>
+      <li>80-100% work week spent on family law.</li>
+      <li>Experience in trusts</li>
+      <li>Experience in collaborative practice</li>
     fees: |
-      - $429 per hour [BR]
-      - Fixed fees for Consent Orders, Mediation, Parenting Plans, and Court Documents [BR]
-      - **Offers first consult free** [BR]
+      <li>$429 per hour</li>
+      <li>Fixed fees for Consent Orders, Mediation, Parenting Plans, and Court Documents</li>
+      <li>**Offers first consult free**</li>
     service_area:
       - 3
       - 10
@@ -94,17 +94,17 @@ data:
     phone: 08 7226 5051
     website: https://comleylegal.com.au
     experience: |
-      - 8 Years Experience [BR]
-      - 80-100% work week spent on family law [BR]
-      - Nationally Accredited Mediator [BR]
-      - Collaborative Practitioner [BR]
-      - Independant Children's Lawyer [BR]
-      - Member of Legal Services Commission [BR]
+      <li>8 Years Experience</li>
+      <li>80-100% work week spent on family law</li>
+      <li>Nationally Accredited Mediator</li>
+      <li>Collaborative Practitioner</li>
+      <li>Independant Children's Lawyer</li>
+      <li>Member of Legal Services Commission</li>
     fees: |
-      - $420 per hour plus GST [BR]
-      - Flexible payment options (including fixed fee and deferment) can be discussed [BR]
-      - May provide low-income options [BR]
-      - May provide legal aid. [BR]
+      <li>$420 per hour plus GST</li>
+      <li>Flexible payment options (including fixed fee and deferment) can be discussed</li>
+      <li>May provide low-income options</li>
+      <li>May provide legal aid.</li>
     service_area:
       - 3
     language: true
@@ -115,20 +115,20 @@ data:
     phone: Landline 08 8464 0033 Mobile 0411 698 475
     website: https://www.culshawmiller.com.au
     experience: |
-      - 20+ years experience [BR]
-      - 80-100% work week spent on family law [BR]
-      - Member of Family Law Council 2006 to 2012 [BR]
-      - Accredited Specialist [BR]
-      - Member of the Legal Services Commission [BR]
-      - Can utilise interpreter services for other languages [BR]
-      - Experience in family trusts [BR]
-      - Experience in trusts and estates [BR]
-      - Experience in company business law [BR]
-      - Experience in collaborative practice [BR]
+      <li>20+ years experience</li>
+      <li>80-100% work week spent on family law</li>
+      <li>Member of Family Law Council 2006 to 2012</li>
+      <li>Accredited Specialist</li>
+      <li>Member of the Legal Services Commission</li>
+      <li>Can utilise interpreter services for other languages</li>
+      <li>Experience in family trusts</li>
+      <li>Experience in trusts and estates</li>
+      <li>Experience in company business law</li>
+      <li>Experience in collaborative practice</li>
     fees: |
-      - $440 to $660 depending on nature of the matter [BR]
-      - May provide low-income payment options [BR]
-      - May defer fees on property matters [BR]
+      <li>$440 to $660 depending on nature of the matter</li>
+      <li>May provide low-income payment options</li>
+      <li>May defer fees on property matters</li>
     service_area:
       - 3
     language: true
@@ -139,17 +139,16 @@ data:
     phone: 0414 825 555
     website: https://www.lglawyers.com.au
     experience: |
-      - 20+ years experience [BR]
-      - 80-100% work week spent on family law [BR]
-      - Independant children's lawyer [BR]
-      - Member of the Legal Services Comission [BR]
+      <li>20+ years experience</li>
+      <li>80-100% work week spent on family law</li>
+      <li>Independant children's lawyer</li>
+      <li>Member of the Legal Services Comission</li>
     fees: |
-      - $440 per hour [BR]
-      - May provide fixed fees depending on the nature of the matter [BR]
-      - May provide legal aid [BR]
-      - May defer fees on property matters [BR]
-      - **Offers first consult free** [BR]
-      - 
+      <li>$440 per hour</li>
+      <li>May provide fixed fees depending on the nature of the matter</li>
+      <li>May provide legal aid</li>
+      <li>May defer fees on property matters</li>
+      <li>**Offers first consult free**</li>
     service_area:
       - 1
     language: false
@@ -160,13 +159,13 @@ data:
     phone: 08 8464 0033
     website: https://www.culshawmiller.com.au
     experience: |
-      - 7 years experience [BR]
-      - 80-100% work week spent on family law [BR]
-      - Member of the Legal Services Commission [BR]
+      <li>7 years experience</li>
+      <li>80-100% work week spent on family law</li>
+      <li>Member of the Legal Services Commission</li>
       
     fees: |
-      - $418 per hour [BR]
-      - May be able to provide low-income payment options [BR]
+      <li>$418 per hour</li>
+      <li>May be able to provide low-income payment options</li>
     service_area:
       - 3
     language: false
@@ -177,18 +176,18 @@ data:
     phone: 0423 267 644
     website: https://www.familylawproject.com.au
     experience: |
-      - 18 years experience [BR]
-      - 80-100% work week spent on family law [BR]
-      - Independant Children's Lawyer [BR]
-      - Specialist Family Lawyer [BR]
-      - Member of the Legal Services Commission [BR]
-      - Can speak Italian or Arabic [BR]
+      <li>18 years experience</li>
+      <li>80-100% work week spent on family law</li>
+      <li>Independent Children's Lawyer</li>
+      <li>Specialist Family Lawyer</li>
+      <li>Member of the Legal Services Commission</li>
+      <li>Can speak Italian or Arabic</li>
     fees: |
-      - Offers fixed-fee payment option [BR]
-      - **Offers first consult free** [BR]
-      - May provide legal aid [BR]
-      - May defer fees on property settlement [BR]
-      - May provide low-income payment options [BR]
+      <li>Offers fixed-fee payment option</li>
+      <li>**Offers first consult free**</li>
+      <li>May provide legal aid</li>
+      <li>May defer fees on property settlement</li>
+      <li>May provide low-income payment options</li>
     service_area:
       - 3
     language: true
@@ -199,16 +198,16 @@ data:
     phone: 08 8212 6875
     website: https://www.scammell.com.au
     experience: |
-      - 3 years experience [BR]
-      - 80-100% work week spent on family law [BR]
-      - Experience in family dispute resolution [BR]
-      - Experience in family trusts [BR]
-      - Experience in company business law [BR]
-      - Experience in collaborative practice [BR]
+      <li>3 years experience</li>
+      <li>80-100% work week spent on family law</li>
+      <li>Experience in family dispute resolution</li>
+      <li>Experience in family trusts</li>
+      <li>Experience in company business law</li>
+      <li>Experience in collaborative practice</li>
     fees: |
-      - Offers fixed fee payment options on Divorce matters [BR]
-      - **Offers first consult free** [BR]
-      - May defer fees on property settlement [BR]
+      <li>Offers fixed fee payment options on Divorce matters</li>
+      <li>**Offers first consult free**</li>
+      <li>May defer fees on property settlement</li>
     service_area:
       - 1
       - 2
@@ -224,14 +223,14 @@ data:
     phone: 08 8212 6875
     website: https://www.scammell.com.au
     experience: |
-      - 12 years experience [BR]
-      - 80-100% work week spent on family law [BR]
-      - Can utilise translating services for other languages [BR]
+      <li>12 years experience</li>
+      <li>80-100% work week spent on family law</li>
+      <li>Can utilise translating services for other languages</li>
     fees: |
-      - $462 per hour [BR]
-      - May offer fixed fees on Divorce matters [BR]
-      - May defer fees on property settlement [BR]
-      - May provide low-income payment options [BR]
+      <li>$462 per hour</li>
+      <li>May offer fixed fees on Divorce matters</li>
+      <li>May defer fees on property settlement</li>
+      <li>May provide low-income payment options</li>
     service_area:
       - 1
       - 3
@@ -246,12 +245,12 @@ data:
     phone: 0432 255 626
     website: https://www.varga.com.au/
     experience: |
-      - 2 years experience [BR]
-      - 60-80% work week spent on family law [BR]
-      - Can speak Indonesian and Spanish [BR]
+      <li>2 years experience</li>
+      <li>60-80% work week spent on family law</li>
+      <li>Can speak Indonesian and Spanish</li>
     fees: |
-      - May offer scale fees [BR]
-      - May offer low-income payment options (including via RapidPay) [BR]
+      <li>May offer scale fees</li>
+      <li>May offer low-income payment options (including via RapidPay)</li>
     service_area:
       - 3
     language: true
@@ -262,18 +261,18 @@ data:
     phone: 08 7001 6135
     website: https://www.stanlaw.com.au/
     experience: |
-      - 12 years experience [BR]
-      - 80-100% work week spent on family law [BR]
-      - Member of the Legal Services Commission [BR]
-      - Experience in family dispute resolution [BR]
-      - Experience in family trusts [BR]
-      - Experience in collaborative practice [BR]
+      <li>12 years experience</li>
+      <li>80-100% work week spent on family law</li>
+      <li>Member of the Legal Services Commission</li>
+      <li>Experience in family dispute resolution</li>
+      <li>Experience in family trusts</li>
+      <li>Experience in collaborative practice</li>
     fees: |
-      - Fixed fees on all services [BR]
-      - $462 per hour [BR]
-      - May defer fees on property settlement [BR]
-      - **Offers first consult free** [BR]
-      - May offer low-income payment options [BR]
+      <li>Fixed fees on all services</li>
+      <li>$462 per hour</li>
+      <li>May defer fees on property settlement</li>
+      <li>**Offers first consult free**</li>
+      <li>May offer low-income payment options</li>
     service_area:
       - 3
       - 10
@@ -285,15 +284,15 @@ data:
     phone: 08 8470 0313
     website: https://www.stevenslaw.com.au
     experience: |
-      - 20+ years experience [BR]
-      - 80-100% work week spent on family law [BR]
-      - Member of the Legal Services Commission [BR]
-      - Experience in family dispute resolution [BR]
+      <li>20+ years experience</li>
+      <li>80-100% work week spent on family law</li>
+      <li>Member of the Legal Services Commission</li>
+      <li>Experience in family dispute resolution</li>
     fees: |
-      - May provide legal aid [BR]
-      - May offer low-income payment options [BR]
-      - $400-$500 per hour [BR]
-      - Fixed fees available on Amicable Consent Orders ($3,300), Negotiated Consent Orders ($3,300 - $5,500), and Divorces ($550 - $1,100) [BR]
+      <li>May provide legal aid</li>
+      <li>May offer low-income payment options</li>
+      <li>$400-$500 per hour</li>
+      <li>Fixed fees available on Amicable Consent Orders ($3,300), Negotiated Consent Orders ($3,300 - $5,500), and Divorces ($550 - $1,100)</li>
     service_area:
       - 3
     language: false
@@ -304,11 +303,11 @@ data:
     phone: 08 8110 2300
     website: https://bbslawyers.com.au/
     experience: |
-      - 20+ years experience [BR]
-      - 80-100% work week spent on family law [BR]
-      - Experience in family trusts [BR]
+      <li>20+ years experience</li>
+      <li>80-100% work week spent on family law</li>
+      <li>Experience in family trusts</li>
     fees: |
-      Fee information not provided. Please contact lawyer for further details. [BR]
+      Fee information not provided. Please contact lawyer for further details.
     service_area:
       - 3
     language: false

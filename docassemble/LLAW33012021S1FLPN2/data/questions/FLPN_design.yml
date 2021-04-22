@@ -11,3 +11,25 @@ features:
   debug: True
   hide standard menu: False
 ---
+image sets:
+  Freepik:
+    images:
+      baby: crawling.svg
+      money: colormoney.svg
+      phone: phone.svg
+      addy: address.png
+      email: mail.svg
+      bstar: blackstar.svg
+      cstar: goldstar.svg
+      house: house.svg
+      line: lin.png
+      question: question.png
+---
+attachment: 
+  - name: Send a Copy
+    filename: Lawyer List
+    valid formats:
+      - pdf
+    docx template file: FLPN_print_out.docx
+    variable name: FLPNprintout
+---
