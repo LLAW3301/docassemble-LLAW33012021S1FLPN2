@@ -24,6 +24,7 @@ default screen parts:
 include:
   - FLPN_Questions.yml
   - FLPN_DirectoryEntries.yml
+  - FLPN_design.yml
 ---
 objects:
   - FLPNeligibleEntries: DAList.using(there_are_any=True, auto_gather=False)

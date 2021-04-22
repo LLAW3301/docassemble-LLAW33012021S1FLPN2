@@ -1,0 +1,13 @@
+---
+objects:
+  - MJFlogo: DAStaticFile.using(filename='FLPN2logo2.png')
+---
+mandatory: True
+code: |
+  set_parts(logo='<img src="' + MJFlogo.url_for() + '" style="height: 70px;">')
+---
+features:
+  css: FLPN.css
+  debug: True
+  hide standard menu: False
+---
