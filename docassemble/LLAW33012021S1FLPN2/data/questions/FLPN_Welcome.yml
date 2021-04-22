@@ -1,0 +1,21 @@
+---
+mandatory: True
+question: Relationships Australia (SA) Family Law Directory
+subquestion: |
+  #**Welcome!**
+  
+  This directory aims to assist you in finding a Family Lawyer that suits your circumstances.
+  
+  **Privacy Statement:**
+  Any information you provide this directory with will only be used for the sole purpose of helping you to find a suitable Family Lawyer. The information you provide this directory with will not be stored.
+  
+  ***Disclaimer:***
+  The Information contained in this directory has been provided by the participating practicing lawyers and therefore, Relationships Australia (SA) cannot guarantee the accuracy of any information provided. Relationships Australia (SA) also does not recommend any of the listed lawyers and are not liable for any issues arising from their engagement. Information provided by this app is not an adequate substitute for professional legal advice, it is merely a guide and users are encouraged to make their own enquiries with the listed lawyers or alternatively, through the Law Society of South Australia or the Legal Profession Conduct Commission.
+
+  By clicking "I agree and wish to continue", the user is agreeing to the disclaimer.
+  
+buttons:
+  - I agree and wish to continue: continue
+  - I do not agree and wish to exit: exit
+    url: https://www.rasa.org.au/
+---
