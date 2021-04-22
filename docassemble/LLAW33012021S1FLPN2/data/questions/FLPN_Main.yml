@@ -22,7 +22,7 @@ default screen parts:
 ---
 # add all other yml files here (probably acts as if you are copying/pasting code in those files)
 include:
-  - FLPN_questions.yml
+  - FLPN_Questions.yml
   - FLPN_DirectoryEntries.yml
 ---
 objects:
@@ -30,7 +30,7 @@ objects:
   - endpoints: DADict
 ---
 features:
-  css: PLACEHOLDER.CCS
+  css: FLPN.css
   debug: True
   hide standard menu: False
 ---
