@@ -80,10 +80,6 @@ subquestion: |
   <!-- REMEMBER to use HTML comment tags in html area, otherwise adding regular comments makes docassemble think it's the end of the "subquestion", and it gives parserError (beware: HTML comments are visible to users in inspect element) -->
   <!-- 3 different options -->
   <!-- 1) launage + area -->
-  
-  FLPNlanguage: ${ FLPNlanguage }
-  
-  FLPNregion: ${ FLPNregion }
 
      <div class='resultstitle'> BASED ON YOUR RESPONSES </div> <br>
    Here is a list of ${ FLPNeligibleEntries.number() } family lawyers in your area, who may be able to provide services in languages other than English. Contact the lawyers below for more information.

@@ -4,7 +4,7 @@ template: FLPN2_lawyerlist[i]['display_record']
 # BE CAREFUL OF LINE BREAKS HERE, messes up the weird proprietary docassemble table syntax, use <br> to make newlines instead.
 # With that said, sorry for absolutely awful readability
 content: |
-  <div class='box'><div class='lawyer'>${ FLPN2_lawyerlist[i].item('lawyer') } </div> [FILE line.png] <br> <div class='lawresults'> :house: ${ FLPN2_lawyerlist[i].item('law_firm') } <br> :phone: ${ FLPN2_lawyerlist[i].item('phone') } <br> :email: ${ FLPN2_lawyerlist[i].item('email') } <br> :addy: ${ FLPN2_lawyerlist[i].item('address') } <br> <br> ** Experience ** <br> ${ formatListIntoHTML(FLPN2_lawyerlist[i]['experience']) } <br> ** Fee Information ** <br> ${ formatListIntoHTML(FLPN2_lawyerlist[i]['fees']) } <br> </div></div>
+    <div class='box'><div class='lawyer'>[${ FLPN2_lawyerlist[i].item('lawyer') }]( ${ FLPN2_lawyerlist[i].item('website') }) </div> [FILE line.png] <br> <div class='lawresults'> :house: ${ FLPN2_lawyerlist[i].item('law_firm') } <br> :phone: ${ FLPN2_lawyerlist[i].item('phone') } <br> :email: ${ FLPN2_lawyerlist[i].item('email') } <br> :addy: ${ FLPN2_lawyerlist[i].item('address') } <br> <br> ** Experience ** <br> ${ formatListIntoHTML(FLPN2_lawyerlist[i]['experience']) } <br> ** Fee Information ** <br> ${ formatListIntoHTML(FLPN2_lawyerlist[i]['fees']) } <br> </div></div>
 ---
 # formats multi-string list into a single-line HTML string (to work around docassemble tables newline issue)
 code: |
