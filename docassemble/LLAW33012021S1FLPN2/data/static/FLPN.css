@@ -1,7 +1,7 @@
 .navbar{
-   background-color: rgb(255,255,255) !important;
+   background-color: rgb(214, 208, 245) !important;
    border-bottom-color: rgb(68,48,148);
-   border-bottom-width: 8px;
+   border-bottom-width: 4px;
    border-bottom-style: solid;
 }
 .navbar .navbar-brand{
@@ -29,13 +29,12 @@
     background-color: rgba(255,255,255,0.3);
 }
 .navbar form button{
-    background-color: rgba(255,255,255,0.3);
     color:#FFF;
     /* setting the border to 0 disables the border around the button */
     border:0;
 }
 .navbar form button:hover{
-    background-color: rgba(255,255,255,0.3);
+    color: rgba(0,0,0);
 }
 .da-spinner-container{
 	position: fixed !important;
@@ -45,19 +44,16 @@
 	bottom: 0;
 	width: 100% !important;
 	height: 100% !important;
-	background-image: url('loading_icon.gif');
+	background-image: url('spinner.gif');
 	background-repeat: no-repeat;
 	background-size: 60px 60px;
 	background-position: center center;
 }
 a:link {
-  color: rgba(64, 64, 64);
-  font-size: 14px;
-  font-weight: thin;
+  color: rgb(68,48,148);
 }
 a:visited {
-  color: rgba(64, 64, 64);
-  font-size: 15px;
+  color: rgb(68,48,148);
 }
 .agencytable{
   font-size: 14px;
@@ -66,6 +62,7 @@ a:visited {
 .table-responsive {
   text-align: left;
   border-color: rgba(255, 255, 255);
+  font-weight: 300;
 }
 .table thead th {
   background-color: rgba(255, 255, 255);
@@ -90,10 +87,11 @@ a:visited {
 .agencytext{
   text-align: center;
   background-color: red;
+  font-weight: 300;
 }
-.familytitle{
+.resultstitle{
   text-align: center;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 20px;
   color: rgba(68,48,148);
 }
@@ -101,6 +99,8 @@ a:visited {
   text-align: justify;
   font-size: 14px;
   font-style: italic;
+  font-weight: 300;
+  color: rgb(68,48,148);
 }
 .disclaimertitle{
   text-align: justify;
@@ -110,9 +110,10 @@ a:visited {
 .da-subquestion{
   text-align: justify;
   font-size: 16px;
+  font-weight: 300;
 }
 .h3{
-  font-weight: normal;
+  font-weight: 300;
   font-size: 30px;
   color: rgb(68,48,148);
   text-align: center;
@@ -121,47 +122,111 @@ a:visited {
   color: rgb(0,0,0);
   background-color: rgb(172, 239, 172);
   border-color: rgb(0,0,0,0);
+  font-weight: 300;
+  position: relative;
 }
 /* ...and when hovering over it */
 .btn-primary:hover{
   color: rgb(255,255,255);
   background-color: rgb(62,199,35,0.7);
   border-color: rgb(0,0,0,0);
+  font-weight: 300;
 }
 
 .btn-danger{
   color: rgb(0,0,0);
   background-color: rgb(239,172,172);
   border-color: rgb(0,0,0,0);
+  font-weight: 300;
 }
 
 .btn-danger:hover{
   color: rgb(255,255,255);
   background-color: rgb(199,35,50,0.7);
   border-color: rgb(0,0,0,0);
+  font-weight: 300;
 }
 
 .btn-secondary{
   color: rgb(0,0,0);
   background-color: rgb(239,172,172);
   border-color: rgb(0,0,0,0);
+  font-weight: 300;
 }
 
 .btn-secondary:hover{
   color: rgb(255,255,255);
   background-color: rgb(199,35,50,0.7);
   border-color: rgb(0,0,0,0);
+  font-weight: 300;
+}
+.btn-warning{
+  color: rgb(0,0,0);
+  background-color: rgb(172, 239, 172);
+  border-color: rgb(0,0,0,0);
+  font-weight: 300;
+}
+/* ...and when hovering over it */
+.btn-warning:hover{
+  color: rgb(255,255,255);
+  background-color: rgb(62,199,35,0.7);
+  border-color: rgb(0,0,0,0);
+  font-weight: 300;
 }
 
 .btn-light:{
-  color:rgb(255,255,255);
+  color: rgb(0,0,0);
   background-color: rgb(245,233,255);
   border-color: rgb(0,0,0,0);
+  font-weight: 300;
+}
+.btn-link{
+  color: rgb(0,0,0);
+  background-color: rgb(255, 203, 140);
+  border-color: rgb(0,0,0,0);
+  font-weight: 300;
+  position: relative;
+}
+.btn-link:hover{
+  color: rgb(255,255,255);
+  background-color: rgb(237, 157, 59);
+  border-color: rgb(0,0,0,0);
+  font-weight: 300;
+  font-style: normal;
+}
+.container{
+  font-weight: 300;
 }
 .lawyer{
   color: rgb(68,48,148);
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 15px;
-  text-align: center;
+  font-size: 20px;
+  text-align: left;
+  font-weight: 300;
+}
+.lawresults{
+  padding-left: 20px
+}
+.box li {
+  list-style: none;
+}
+.box li::before{
+  content: "»";
+  margin-right: 0.4em;
+  top: -0.25em;
+}
+.popover{
+  background-color: rgba(231, 227, 255);
+  font-weight: 300;
+  border-width: 0px;
+  margin-left: -40px;
+}
+.popover li{
+  list-style: none;
+}
+.popover li::before{
+  content: "⌲";
+  font-weight: 900;
+  margin-right: 0.4em;
+  top: -0.25em;
+  margin-left: -40px;
 }

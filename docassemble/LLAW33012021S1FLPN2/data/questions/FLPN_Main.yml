@@ -1,14 +1,14 @@
 ---
 objects:
-  - MJFlogo: DAStaticFile.using(filename='FLPN_logo2.png')
+  - MJFlogo: DAStaticFile.using(filename='FLPN_logo4.png')
 ---
 mandatory: True
 code: |
-  #set_parts(logo='<img src="' + MJFlogo.url_for() + '" style="height: 60px;">')#
+  set_parts(logo='<img src="' + MJFlogo.url_for() + '" style="height: 60px;">')
 ---
 metadata:
   title: |
-    PLACEHOLDER
+    Family Law Directory
   short title: |
     PLACEHOLDER SHORT TITLE
   organisation: Flinders University
@@ -32,9 +32,8 @@ include:
 # Make sure not to change order, otherwise welcome screen might not be run first
   - FLPN_Questions.yml
   - FLPN_DirectoryEntries.yml
-# commented out because gives error right now
-#  - FLPN_design.yml
   - FLPN_display_output.yml
+  - FLPN_design.yml
 ---
 objects:
   - FLPNeligibleEntries: DAList.using(there_are_any=True, auto_gather=False)
@@ -44,6 +43,8 @@ features:
   css: FLPN.css
   debug: True
   hide standard menu: False
+  question back button: True
+  navigation back button: False
 ---
 # This code drives the app
 mandatory: True

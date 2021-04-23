@@ -1,11 +1,4 @@
 ---
-objects:
-  - MJFlogo: DAStaticFile.using(filename='FLPN2logo2.png')
----
-mandatory: True
-code: |
-  set_parts(logo='<img src="' + MJFlogo.url_for() + '" style="height: 70px;">')
----
 features:
   css: FLPN.css
   debug: True
@@ -22,7 +15,7 @@ image sets:
       bstar: blackstar.svg
       cstar: goldstar.svg
       house: house.svg
-      line: lin.png
+      lawyerline: line.png
       question: question.png
 ---
 attachment: 
