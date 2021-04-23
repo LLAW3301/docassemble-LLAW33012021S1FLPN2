@@ -13,6 +13,7 @@
     # 11 - Western Adelaide
     # 12 - Yorke and Mid North
 
+
 variable name: FLPN2_lawyerlist
 use objects: true
 data:
@@ -22,16 +23,16 @@ data:
     email: contact@alphafamilylawyers.com.au
     phone: 08 7129 4411
     website: https://www.alphafamilylawyers.com.au
-    experience: |
-        <li>18 Years experience</li>
-        <li>80-100% work week spent on family law</li>
-        <li>Independant Children's Lawyer</li>
-        <li>Member of the Legal Services Commission</li>
-        <li>Can speak Greek</li>
-    fees: |
-        <li>$550 per hour</li>
-        <li>Free half hour consult</li>
-        <li>Can defer frees on property settlement matters</li>
+    experience:
+        - 18 Years experience
+        - 80-100% work week spent on family law
+        - "Independant Children's Lawyer"
+        - Member of the Legal Services Commission
+        - Can speak Greek
+    fees:
+        - $550 per hour
+        - Free half hour consult
+        - Can defer frees on property settlement matters
     service_area:
         - 3
     language: true
@@ -41,12 +42,12 @@ data:
     email: andrew.barnes@bbslawyers.com.au
     phone: 08 8110 2300
     website: https://bbslawyers.com.au/
-    experience: |
-      <li>20+ Years Experience</li>
-      <li>80-100% work week spent on family law</li>
-      <li>Experience in family trusts</li>
-    fees: |
-      Fee information not provided. Please contact lawyer for further details. [BR]
+    experience:
+      - 20+ Years Experience
+      - 80-100% work week spent on family law
+      - Experience in family trusts
+    fees: 
+      - "Fee information not provided. Please contact lawyer for further details." 
     service_area:
       - 3
     language: false
@@ -56,15 +57,15 @@ data:
     email: admin@bbslawyers.com.au
     phone: 08 8110 2300
     website: https://bbslawyers.com.au/
-    experience: |
-      <li>8 Years experience</li>
-      <li>80-100% work week spent on family law</li>
-      <li>Member of Law Society of South Australia</li>
-      <li>Member of Family Law Section of the Law Council of Australia</li>
-      <li>Doyles Guide: 2019 & 2020 Rising Star</li>
-      <li>2019 & 2020 First Tier Family Law Firm</li>
-    fees: |
-      <li>$418 per hour</li>
+    experience:
+      - 8 Years experience
+      - 80-100% work week spent on family law
+      - Member of Law Society of South Australia
+      - Member of Family Law Section of the Law Council of Australia
+      - "Doyles Guide: 2019 & 2020 Rising Star"
+      - 2019 & 2020 First Tier Family Law Firm
+    fees:
+      - $418 per hour
     service_area:
       - 3
     language: false
@@ -74,15 +75,15 @@ data:
     email: madeleine@stanlaw.com.au
     phone: 08 7001 6135
     website: https://www.stanlaw.com.au/
-    experience: |
-      <li>4 Years experience</li>
-      <li>80-100% work week spent on family law.</li>
-      <li>Experience in trusts</li>
-      <li>Experience in collaborative practice</li>
-    fees: |
-      <li>$429 per hour</li>
-      <li>Fixed fees for Consent Orders, Mediation, Parenting Plans, and Court Documents</li>
-      <li>**Offers first consult free**</li>
+    experience:
+      - "4 Years experience"
+      - "80-100% work week spent on family law."
+      - "Experience in trusts"
+      - "Experience in collaborative practice"
+    fees:
+      - "$429 per hour"
+      - "Fixed fees for Consent Orders, Mediation, Parenting Plans, and Court Documents"
+      - "**Offers first consult free**"
     service_area:
       - 3
       - 10
@@ -93,18 +94,18 @@ data:
     email: admin@comleylegal.com.au
     phone: 08 7226 5051
     website: https://comleylegal.com.au
-    experience: |
-      <li>8 Years Experience</li>
-      <li>80-100% work week spent on family law</li>
-      <li>Nationally Accredited Mediator</li>
-      <li>Collaborative Practitioner</li>
-      <li>Independant Children's Lawyer</li>
-      <li>Member of Legal Services Commission</li>
-    fees: |
-      <li>$420 per hour plus GST</li>
-      <li>Flexible payment options (including fixed fee and deferment) can be discussed</li>
-      <li>May provide low-income options</li>
-      <li>May provide legal aid.</li>
+    experience:
+      - "8 Years Experience"
+      - "80-100% work week spent on family law"
+      - "Nationally Accredited Mediator"
+      - "Collaborative Practitioner"
+      - "Independant Children's Lawyer"
+      - "Member of Legal Services Commission"
+    fees:
+      - "$420 per hour plus GST"
+      - "Flexible payment options (including fixed fee and deferment) can be discussed"
+      - "May provide low-income options"
+      - "May provide legal aid."
     service_area:
       - 3
     language: true
@@ -114,21 +115,21 @@ data:
     email: jeremy.culshaw@culshawmiller.com.au
     phone: Landline 08 8464 0033 Mobile 0411 698 475
     website: https://www.culshawmiller.com.au
-    experience: |
-      <li>20+ years experience</li>
-      <li>80-100% work week spent on family law</li>
-      <li>Member of Family Law Council 2006 to 2012</li>
-      <li>Accredited Specialist</li>
-      <li>Member of the Legal Services Commission</li>
-      <li>Can utilise interpreter services for other languages</li>
-      <li>Experience in family trusts</li>
-      <li>Experience in trusts and estates</li>
-      <li>Experience in company business law</li>
-      <li>Experience in collaborative practice</li>
-    fees: |
-      <li>$440 to $660 depending on nature of the matter</li>
-      <li>May provide low-income payment options</li>
-      <li>May defer fees on property matters</li>
+    experience:
+      - "20+ years experience"
+      - "80-100% work week spent on family law"
+      - "Member of Family Law Council 2006 to 2012"
+      - "Accredited Specialist"
+      - "Member of the Legal Services Commission"
+      - "Can utilise interpreter services for other languages"
+      - "Experience in family trusts"
+      - "Experience in trusts and estates"
+      - "Experience in company business law"
+      - "Experience in collaborative practice"
+    fees:
+      - "$440 to $660 depending on nature of the matter"
+      - "May provide low-income payment options"
+      - "May defer fees on property matters"
     service_area:
       - 3
     language: true
@@ -138,17 +139,17 @@ data:
     email: admin@lglawyers.com.au
     phone: 0414 825 555
     website: https://www.lglawyers.com.au
-    experience: |
-      <li>20+ years experience</li>
-      <li>80-100% work week spent on family law</li>
-      <li>Independant children's lawyer</li>
-      <li>Member of the Legal Services Comission</li>
-    fees: |
-      <li>$440 per hour</li>
-      <li>May provide fixed fees depending on the nature of the matter</li>
-      <li>May provide legal aid</li>
-      <li>May defer fees on property matters</li>
-      <li>**Offers first consult free**</li>
+    experience:
+      - "20+ years experience"
+      - "80-100% work week spent on family law"
+      - "Independant children's lawyer"
+      - "Member of the Legal Services Comission"
+    fees:
+      - "$440 per hour"
+      - "May provide fixed fees depending on the nature of the matter"
+      - "May provide legal aid"
+      - "May defer fees on property matters"
+      - "**Offers first consult free**"
     service_area:
       - 1
     language: false
@@ -158,14 +159,14 @@ data:
     email: sam.lehman@culshawmiller.com.au
     phone: 08 8464 0033
     website: https://www.culshawmiller.com.au
-    experience: |
-      <li>7 years experience</li>
-      <li>80-100% work week spent on family law</li>
-      <li>Member of the Legal Services Commission</li>
+    experience:
+      - "7 years experience"
+      - "80-100% work week spent on family law"
+      - "Member of the Legal Services Commission"
       
-    fees: |
-      <li>$418 per hour</li>
-      <li>May be able to provide low-income payment options</li>
+    fees:
+      - "$418 per hour"
+      - "May be able to provide low-income payment options"
     service_area:
       - 3
     language: false
@@ -175,19 +176,19 @@ data:
     email: lawyers@familylawproject.com.au
     phone: 0423 267 644
     website: https://www.familylawproject.com.au
-    experience: |
-      <li>18 years experience</li>
-      <li>80-100% work week spent on family law</li>
-      <li>Independent Children's Lawyer</li>
-      <li>Specialist Family Lawyer</li>
-      <li>Member of the Legal Services Commission</li>
-      <li>Can speak Italian or Arabic</li>
-    fees: |
-      <li>Offers fixed-fee payment option</li>
-      <li>**Offers first consult free**</li>
-      <li>May provide legal aid</li>
-      <li>May defer fees on property settlement</li>
-      <li>May provide low-income payment options</li>
+    experience:
+      - "18 years experience"
+      - "80-100% work week spent on family law"
+      - "Independent Children's Lawyer"
+      - "Specialist Family Lawyer"
+      - "Member of the Legal Services Commission"
+      - "Can speak Italian or Arabic"
+    fees:
+      - "Offers fixed-fee payment option"
+      - "**Offers first consult free**"
+      - "May provide legal aid"
+      - "May defer fees on property settlement"
+      - "May provide low-income payment options"
     service_area:
       - 3
     language: true
@@ -197,17 +198,17 @@ data:
     email: nlloyd@scammell.com.au
     phone: 08 8212 6875
     website: https://www.scammell.com.au
-    experience: |
-      <li>3 years experience</li>
-      <li>80-100% work week spent on family law</li>
-      <li>Experience in family dispute resolution</li>
-      <li>Experience in family trusts</li>
-      <li>Experience in company business law</li>
-      <li>Experience in collaborative practice</li>
-    fees: |
-      <li>Offers fixed fee payment options on Divorce matters</li>
-      <li>**Offers first consult free**</li>
-      <li>May defer fees on property settlement</li>
+    experience:
+      - "3 years experience"
+      - "80-100% work week spent on family law"
+      - "Experience in family dispute resolution"
+      - "Experience in family trusts"
+      - "Experience in company business law"
+      - "Experience in collaborative practice"
+    fees:
+      - "Offers fixed fee payment options on Divorce matters"
+      - "**Offers first consult free**"
+      - "May defer fees on property settlement"
     service_area:
       - 1
       - 2
@@ -222,15 +223,15 @@ data:
     email: sngai@scammell.com.au
     phone: 08 8212 6875
     website: https://www.scammell.com.au
-    experience: |
-      <li>12 years experience</li>
-      <li>80-100% work week spent on family law</li>
-      <li>Can utilise translating services for other languages</li>
-    fees: |
-      <li>$462 per hour</li>
-      <li>May offer fixed fees on Divorce matters</li>
-      <li>May defer fees on property settlement</li>
-      <li>May provide low-income payment options</li>
+    experience:
+      - "12 years experience"
+      - "80-100% work week spent on family law"
+      - "Can utilise translating services for other languages"
+    fees:
+      - "$462 per hour"
+      - "May offer fixed fees on Divorce matters"
+      - "May defer fees on property settlement"
+      - "May provide low-income payment options"
     service_area:
       - 1
       - 3
@@ -244,13 +245,13 @@ data:
     email: jacinta@varga.com.au
     phone: 0432 255 626
     website: https://www.varga.com.au/
-    experience: |
-      <li>2 years experience</li>
-      <li>60-80% work week spent on family law</li>
-      <li>Can speak Indonesian and Spanish</li>
-    fees: |
-      <li>May offer scale fees</li>
-      <li>May offer low-income payment options (including via RapidPay)</li>
+    experience:
+      - "2 years experience"
+      - "60-80% work week spent on family law"
+      - "Can speak Indonesian and Spanish"
+    fees:
+      - "May offer scale fees"
+      - "May offer low-income payment options (including via RapidPay)"
     service_area:
       - 3
     language: true
@@ -260,19 +261,19 @@ data:
     email: amra@stanlaw.com.au
     phone: 08 7001 6135
     website: https://www.stanlaw.com.au/
-    experience: |
-      <li>12 years experience</li>
-      <li>80-100% work week spent on family law</li>
-      <li>Member of the Legal Services Commission</li>
-      <li>Experience in family dispute resolution</li>
-      <li>Experience in family trusts</li>
-      <li>Experience in collaborative practice</li>
-    fees: |
-      <li>Fixed fees on all services</li>
-      <li>$462 per hour</li>
-      <li>May defer fees on property settlement</li>
-      <li>**Offers first consult free**</li>
-      <li>May offer low-income payment options</li>
+    experience:
+      - "12 years experience"
+      - "80-100% work week spent on family law"
+      - "Member of the Legal Services Commission"
+      - "Experience in family dispute resolution"
+      - "Experience in family trusts"
+      - "Experience in collaborative practice"
+    fees:
+      - "Fixed fees on all services"
+      - "$462 per hour"
+      - "May defer fees on property settlement"
+      - "**Offers first consult free**"
+      - "May offer low-income payment options"
     service_area:
       - 3
       - 10
@@ -283,16 +284,16 @@ data:
     email: larisda@stevenslaw.com.au
     phone: 08 8470 0313
     website: https://www.stevenslaw.com.au
-    experience: |
-      <li>20+ years experience</li>
-      <li>80-100% work week spent on family law</li>
-      <li>Member of the Legal Services Commission</li>
-      <li>Experience in family dispute resolution</li>
-    fees: |
-      <li>May provide legal aid</li>
-      <li>May offer low-income payment options</li>
-      <li>$400-$500 per hour</li>
-      <li>Fixed fees available on Amicable Consent Orders ($3,300), Negotiated Consent Orders ($3,300 - $5,500), and Divorces ($550 - $1,100)</li>
+    experience:
+      - "20+ years experience"
+      - "80-100% work week spent on family law"
+      - "Member of the Legal Services Commission"
+      - "Experience in family dispute resolution"
+    fees:
+      - "May provide legal aid"
+      - "May offer low-income payment options"
+      - "$400-$500 per hour"
+      - "Fixed fees available on Amicable Consent Orders ($3,300), Negotiated Consent Orders ($3,300 - $5,500), and Divorces ($550 - $1,100)"
     service_area:
       - 3
     language: false
@@ -302,12 +303,12 @@ data:
     email: sharon.thomas@bbslawyers.com.au
     phone: 08 8110 2300
     website: https://bbslawyers.com.au/
-    experience: |
-      <li>20+ years experience</li>
-      <li>80-100% work week spent on family law</li>
-      <li>Experience in family trusts</li>
-    fees: |
-      Fee information not provided. Please contact lawyer for further details.
+    experience:
+      - "20+ years experience"
+      - "80-100% work week spent on family law"
+      - "Experience in family trusts"
+    fees:
+      - "Fee information not provided. Please contact lawyer for further details."
     service_area:
       - 3
     language: false
