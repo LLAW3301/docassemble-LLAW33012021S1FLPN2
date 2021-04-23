@@ -1,5 +1,4 @@
 ## TODO
-* Add wording and entry fields for questions specified in FLPN_questions.yml
 
 
 I added the welcome screen to the 'questions' file, as well as the other questions.
@@ -12,7 +11,6 @@ S1 TASKS DUE BY 11TH MAY
 - Enough functionality to show all end points
 - Draft document template for results
 - comments throughout the code to explain whats going on
-- fix up template display css/styling
 - Fix FLPNprintout (gave me an error)
 - Add text for cases where lawyer results is 0
 - Fix text in results page (it refers to language whether or not the user said they needed it)
