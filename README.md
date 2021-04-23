@@ -10,8 +10,8 @@ S1 TASKS DUE BY 11TH MAY
 - Update the PSD (law students only)
 - Enough functionality to show all end points
 - Draft document template for results
-- comments throughout the code to explain whats going on
-- Fix FLPNprintout (gave me an error)
-- Add text for cases where lawyer results is 0
-- Fix text in results page (it refers to language whether or not the user said they needed it)
-- Change CSS so that hyperlinks are visible (on welcome page)
+- comments throughout the code to explain whats going on - DONE ON CSS
+- Fix FLPNprintout (gave me an error) - FIXED IT
+- Add text for cases where lawyer results is 0 - DONE
+- Fix text in results page (it refers to language whether or not the user said they needed it) - IDK WHAT THIS MEANS
+- Change CSS so that hyperlinks are visible (on welcome page) - IS THAT ALRIGHT?

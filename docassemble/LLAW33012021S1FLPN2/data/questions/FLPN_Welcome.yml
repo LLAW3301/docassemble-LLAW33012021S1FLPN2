@@ -12,10 +12,10 @@ subquestion: |
   
   <div class='disclaimer'> <b>Disclaimer</b> [BR] <i>This application is relying on the information provided by the lawyers themselves. We cannot guarantee the accuracy of any information provided. The results of this application should not be taken as a recommendation. Relationships (SA) cannot be held responsible for any issues that may arise. This application does not provide legal advice. It is merely a guide, and users are encouraged to make their own enquiries with the listed lawyers. Alternatively, enquiries can be made with <a href="https://www.lawsocietysa.asn.au">The Law Society of South Australia</a> or the <a href="https://lsc.sa.gov.au">Legal Services Commission of South Australia</a>.</i> </div> [BR]
 
-  **Do you agree to these terms?**
+  <center> **Do you agree to these terms?** </center>
   
 buttons:
   - Yes, I agree: continue
   - No, I do not agree: exit
-    url: https://www.rasa.org.au/
+    url: https://www.pathwaysnetworksa.com.au
 ---

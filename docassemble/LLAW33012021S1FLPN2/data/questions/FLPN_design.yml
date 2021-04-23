@@ -18,11 +18,3 @@ image sets:
       lawyerline: line.png
       question: question.png
 ---
-attachment: 
-  - name: Send a Copy
-    filename: Lawyer List
-    valid formats:
-      - pdf
-    docx template file: FLPN_print_out.docx
-    variable name: FLPNprintout
----

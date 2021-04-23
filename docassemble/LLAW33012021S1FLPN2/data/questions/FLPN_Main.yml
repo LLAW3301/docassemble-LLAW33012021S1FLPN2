@@ -12,16 +12,16 @@ metadata:
   short title: |
     PLACEHOLDER SHORT TITLE
   organisation: Flinders University
-  show login: True
+  show login: false
 ---
 default screen parts:
   post: |
     <div style="display: flex; height: 200px; align-items: flex-end; flex-direction: row-reverse">
     <div style="margin: 5px"><img src="https://staff.flinders.edu.au/etc.clientlibs/flinders/clientlibs/clientlib-site/resources/images/flinderuni_main_logo_black.png" height="40">
     </div>
-    <div style="margin: 5px; text-align: right">
+    <div style="margin: 5px; text-align: left; color: rgb(102, 102, 102)">
     <cite><small><i>
-    Developed by Flinders University in collaboration with Relationships Australia (SA)
+    Developed by Flinders University in collaboration with Relationships Australia (SA) <br> <div style="text-align: right; color: rgb(173, 173, 173)"> Icons provided by Freepiks</div>
     </i></small></cite>
     </div>
     </div>
@@ -41,8 +41,8 @@ objects:
 ---
 features:
   css: FLPN.css
-  debug: True
-  hide standard menu: False
+  debug: true
+  hide standard menu: false
   question back button: True
   navigation back button: False
 ---
@@ -79,10 +79,10 @@ question: ""
 subquestion: |
   <!-- REMEMBER to use HTML comment tags in html area, otherwise adding regular comments makes docassemble think it's the end of the "subquestion", and it gives parserError (beware: HTML comments are visible to users in inspect element) -->
   <!-- 3 different options -->
+  <div class='resultstitle'> BASED ON YOUR RESPONSES </div>
   <!-- 1) launage + area -->
-
-     <div class='resultstitle'> BASED ON YOUR RESPONSES </div> <br>
-   Here is a list of ${ FLPNeligibleEntries.number() } family lawyers in your area, who may be able to provide services in languages other than English. Contact the lawyers below for more information.
+  % if len(FLPNeligibleEntries) > 0:
+   <br>Here is a list of ${ FLPNeligibleEntries.number() } family lawyers in your area, who may be able to provide services in languages other than English. Contact the lawyers below for more information.
    
    <div class='disclaimer'>The information below is what has been provided by the lawyers themselves. We cannot guaruntee the accuracy of this information, and cannot be held responsible for any issues that may arise with their engagement.</div>
    
@@ -91,19 +91,34 @@ subquestion: |
   %for entry in FLPNeligibleEntries:
   <span class='agencytable'> ${ entry['display_record'] } </span> | &nbsp;
   %endfor
+  % endif
 
+  <!-- 2) just area, no language -->
+
+  <!-- Here is a list of ${ FLPNeligibleEntries.number() } family lawyers in your region. Contact the lawyers below for more information. --!>
 
   <!-- 3) No eligible lawyers found -->
+  
+  % if len(FLPNeligibleEntries) < 1:
+  Unfortunately we weren't able to find any lawyers fitting your search criteria. You can try searching in a different region. Otherwise you will need to make your own enquiries into finding a family lawyer.
+  % endif
 
   <!-- DISPLAY NO MATTER WHAT -->
-   <div class='resultstitle'> LINKS TO MORE INFORMATION </div>
+   <div class='resultstitle'> LINKS TO MORE INFORMATION </div><br>
    <center> [The Law Society of South Australia](https://www.lawsocietysa.asn.au)</center>
    <center>[Legal Services Commission of South Australia](https://lsc.sa.gov.au)</center> <br>
-# FLPNprintout gives error right now, re-add when it's done
-#attachment code: |
-#  FLPNprintout
+attachment code: |
+  FLPNprintout
 buttons:
   - Exit: exit
-    url: example.com
+    url: https://www.pathwaysnetworksa.com.au
   - Restart: restart
+---
+attachment: 
+  - name: Send a Copy
+    filename: Lawyer List
+    valid formats:
+      - pdf
+    docx template file: FLPN_print_out.docx
+    variable name: FLPNprintout
 ---
