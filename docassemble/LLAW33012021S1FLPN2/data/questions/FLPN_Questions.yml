@@ -96,9 +96,13 @@ fields:
         - District Council of Barunga West
         - District Council of the Copper Coast
         - Yorke Peninsula Council.
+progress: 50
+section: Location
 ---
 question: |
   Do you require a lawyer who speaks a language other than English?
 yesno: FLPNlanguage
+progress: 75
+section: Language
 ---
   
