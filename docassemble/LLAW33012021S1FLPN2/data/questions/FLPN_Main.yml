@@ -6,26 +6,6 @@ mandatory: True
 code: |
   set_parts(logo='<img src="' + MJFlogo.url_for() + '" style="height: 60px;">')
 ---
-metadata:
-  title: |
-    Family Law Directory
-  short title: |
-    PLACEHOLDER SHORT TITLE
-  organisation: Flinders University
-  show login: false
----
-default screen parts:
-  post: |
-    <div style="display: flex; height: 200px; align-items: flex-end; flex-direction: row-reverse">
-    <div style="margin: 5px"><img src="https://staff.flinders.edu.au/etc.clientlibs/flinders/clientlibs/clientlib-site/resources/images/flinderuni_main_logo_black.png" height="40">
-    </div>
-    <div style="margin: 5px; text-align: left; color: rgb(102, 102, 102)">
-    <cite><small><i>
-    Developed by Flinders University in collaboration with Relationships Australia (SA) <br> <div style="text-align: right; color: rgb(173, 173, 173)"> Icons provided by <a href='http://www.flaticon.com/authors/freepik'>Freepiks</a></div>
-    </i></small></cite>
-    </div>
-    </div>
----
 # add all other yml files here
 include:
   - FLPN_Welcome.yml
@@ -38,22 +18,6 @@ include:
 objects:
   - FLPNeligibleEntries: DAList.using(there_are_any=True, auto_gather=False)
   - endpoints: DADict
----
-features:
-  css: FLPN.css
-  debug: true
-  hide standard menu: false
-  question back button: True
-  navigation back button: False
-  progress bar: True
-  navigation: horizontal
-  small screen navigation: true
----
-sections:
-  - Welcome
-  - Location
-  - Language
-  - Results
 ---
 # This code drives the app
 mandatory: True
@@ -142,12 +106,4 @@ buttons:
   - Restart: restart
 progress: 100
 section: Results
----
-attachment: 
-  - name: Send a Copy
-    filename: Lawyer List
-    valid formats:
-      - pdf
-    docx template file: FLPN_print_out.docx
-    variable name: FLPNprintout
 ---
