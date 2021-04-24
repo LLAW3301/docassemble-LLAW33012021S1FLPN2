@@ -1,9 +1,4 @@
 ---
-features:
-  css: FLPN.css
-  debug: True
-  hide standard menu: False
----
 image sets:
   Freepik:
     images:
