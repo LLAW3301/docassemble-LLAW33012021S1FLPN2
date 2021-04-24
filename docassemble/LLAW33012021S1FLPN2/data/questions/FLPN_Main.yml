@@ -46,14 +46,13 @@ features:
   question back button: True
   navigation back button: False
   progress bar: True
-  navigation: True
+  navigation: horizontal
+  small screen navigation: False
 ---
 sections:
   - Welcome
-  - Disclaimer
-  - Questions:
-    - Location
-    - Language
+  - Location
+  - Language
   - Results
 ---
 # This code drives the app

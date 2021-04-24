@@ -32,7 +32,16 @@
 .navbar form button:hover{
     color: rgba(0,0,0);
 }
+.navbar>.container, .navbar>.container-fluid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+}
     /* NAVIGATION LIST */
+.danav-horiz {
+  position: relative;
+  top: 50px;
+}
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: rgb(68,48,148);
     background-color: transparent; /*rgb(244, 232, 255)*/
@@ -143,10 +152,16 @@ a:visited {
     /* STYLE OF THE LEGAL DISCLAIMER */
 .disclaimer{
   text-align: justify;
-  font-size: 15px;
+  font-size: 14px;
   font-style: italic;
   font-weight: 300;
   color: rgb(68,48,148);
+}
+.disclaimer h3{
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  text-align: left;
 }
 .disclaimer a:link {
   font-weight: 400;
