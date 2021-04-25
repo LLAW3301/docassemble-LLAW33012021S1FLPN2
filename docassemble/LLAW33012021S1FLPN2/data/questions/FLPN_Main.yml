@@ -57,9 +57,8 @@ subquestion: |
   <div class='resultstitle'> BASED ON YOUR RESPONSES </div>
   <!-- 1) launage + area -->
   
-  <!-- % if FLPNlanguage == 'true': -->
   % if len(FLPNeligibleEntries) > 0:
-   <br>Here is a list of ${ FLPNeligibleEntries.number() } family lawyers matching your search criteria. Please contact the lawyers below for more information.
+   <br>Here is a list of ${ FLPNeligibleEntries.number() } family lawyers matching your search criteria. Please contact the lawyers below for more information. <br><br>
    
    <div class='disclaimer'>The information below is what has been provided by the lawyers themselves. We cannot guaruntee the accuracy of this information, and cannot be held responsible for any issues that may arise with their engagement.</div>
    
@@ -69,24 +68,6 @@ subquestion: |
   <span class='agencytable'> ${ entry['display_record'] } </span> | &nbsp;
   %endfor
   % endif
-  <!-- % endif -->
-
-  <!-- 2) just area, no language -->
-  <!-- % if FLPNlanguage == 'false':
-  % if len(FLPNeligibleEntries) > 0:
-   <br>Here is a list of ${ FLPNeligibleEntries.number() } family lawyers in your area. Contact the lawyers below for more information.
-   
-   <div class='disclaimer'>The information below is what has been provided by the lawyers themselves. We cannot guaruntee the accuracy of this information, and cannot be held responsible for any issues that may arise with their engagement.</div>
-   
-  &nbsp; | &nbsp;
-  ---------------|----------------
-  %for entry in FLPNeligibleEntries:
-  <span class='agencytable'> ${ entry['display_record'] } </span> | &nbsp;
-  %endfor
-  % endif
-  <!-- % endif -->
-
-  <!-- Here is a list of ${ FLPNeligibleEntries.number() } family lawyers in your region. Contact the lawyers below for more information. --!>
 
   <!-- 3) No eligible lawyers found -->
   
