@@ -205,6 +205,18 @@ a:visited {
   border-color: rgb(0,0,0,0);
   font-weight: 300;
 }
+.btn-primary:active {
+  color: rgb(0,0,0);
+  background-color: rgb(172, 239, 172);
+  border-color: rgb(0,0,0,0);
+  font-weight: 300;
+}
+.btn-primary:not(:disabled):not(.disabled):active{
+  color: rgb(0,0,0);
+  background-color: rgb(106, 207, 87);
+  border-color: rgb(0,0,0,0);
+  font-weight: 300;
+}
     /* STYLE OF 'EXIT' BUTTON */
 .btn-danger{
   color: rgb(0,0,0);
@@ -216,6 +228,18 @@ a:visited {
 .btn-danger:hover{
   color: rgb(255,255,255);
   background-color: rgb(199,35,50,0.7);
+  border-color: rgb(0,0,0,0);
+  font-weight: 300;
+}
+.btn-danger:active {
+  color: rgb(0,0,0);
+  background-color: rgb(239,172,172);
+  border-color: rgb(0,0,0,0);
+  font-weight: 300;
+}
+.btn-danger:not(:disabled):not(.disabled):active{
+  color: rgb(0,0,0);
+  background-color: rgb(191, 111, 111);
   border-color: rgb(0,0,0,0);
   font-weight: 300;
 }
@@ -233,6 +257,18 @@ a:visited {
   border-color: rgb(0,0,0,0);
   font-weight: 300;
 }
+.btn-secondary:active{
+  color: rgb(255,255,255);
+  background-color: rgb(239,172,172);
+  border-color: rgb(0,0,0,0);
+  font-weight: 300;
+}
+.btn-secondary:not(:disabled):not(.disabled):active{
+  color: rgb(0,0,0);
+  background-color: rgb(168, 40, 51);
+  border-color: rgb(0,0,0,0);
+  font-weight: 300;
+}
     /* STYLE OF 'RESTART' BUTTON */
 .btn-warning{
   color: rgb(0,0,0);
@@ -243,6 +279,18 @@ a:visited {
 .btn-warning:hover{
   color: rgb(255,255,255);
   background-color: rgb(62,199,35,0.7);
+  border-color: rgb(0,0,0,0);
+  font-weight: 300;
+}
+.btn-warning:active{
+  color: rgb(0,0,0);
+  background-color: rgb(172, 239, 172);
+  border-color: rgb(0,0,0,0);
+  font-weight: 300;
+}
+.btn-warning:not(:disabled):not(.disabled):active{
+  color: rgb(0,0,0);
+  background-color: rgb(106, 207, 87);
   border-color: rgb(0,0,0,0);
   font-weight: 300;
 }
