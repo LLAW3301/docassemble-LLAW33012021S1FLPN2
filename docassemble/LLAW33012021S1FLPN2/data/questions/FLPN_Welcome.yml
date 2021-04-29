@@ -6,10 +6,12 @@ subquestion: |
   Welcome to the **Family Law Directory**. [BR] [BR] This application has been developed to help you find and compare family lawyers in your area. [BR] [BR]
   
   <div class='disclaimer'> <h3>Privacy Statement</h3>
-  Information you provide in this application will not be stored. All responses are anonymous. Your responses will be used for the sole purpose of helping you find a suitable family lawyer. View our privacy statement <a href='https://www.rasa.org.au/about/privacy-and-confidentiality/'>here</a>. Alternatively, you can contact us on 08 8419 2000.</div><br>
+  Any information you provide this directory with will only be used for the sole purpose of helping you to find a suitable Family Lawyer. The information you provide this directory with will not be stored. View our privacy statement <a href='https://www.rasa.org.au/about/privacy-and-confidentiality/'>here</a>. Alternatively, you can contact us on 08 8419 2000.</div><br>
   
-  <div class='disclaimer'> <h3>Disclaimer</h3>This application is relying on the information provided by the lawyers themselves. We cannot guarantee the accuracy of any information provided. The results of this application should not be taken as a recommendation. Relationships (SA) cannot be held responsible for any issues that may arise. This application does not provide legal advice. It is merely a guide, and users are encouraged to make their own enquiries with the listed lawyers. Alternatively, enquiries can be made with <a href="https://www.lawsocietysa.asn.au">The Law Society of South Australia</a> or the <a href="https://lsc.sa.gov.au">Legal Services Commission of South Australia</a>.</div><br>
+  <div class='disclaimer'> <h3>Disclaimer</h3>The Information contained in this directory has been provided by the participating practicing lawyers and therefore, Relationships Australia (SA) cannot guarantee the accuracy of any information provided. Relationships Australia (SA) also does not recommend any of the listed lawyers and are not liable for any issues arising from their engagement. Information provided by this app is not an adequate substitute for professional legal advice, it is merely a guide and users are encouraged to make their own enquiries with the listed lawyers or alternatively, through <a href="https://www.lawsocietysa.asn.au">The Law Society of South Australia</a> or the <a href="https://lsc.sa.gov.au">Legal Services Commission of South Australia</a>.</div><br> 
+ 
 
+  By clicking "I agree and wish to continue", the user is agreeing to the disclaimer.
 buttons:
   - Yes, I agree: continue
   - No, I do not agree: exit
