@@ -307,6 +307,7 @@ a:visited {
   background-color: rgb(255, 203, 140);
   border-color: rgb(0,0,0,0);
   font-weight: 300;
+
   position: relative;
 }
 .btn-link:hover{
@@ -314,6 +315,7 @@ a:visited {
   background-color: rgb(237, 157, 59);
   border-color: rgb(0,0,0,0);
   font-weight: 300;
+  text-decoration: none;
   font-style: normal;
 }
     /* MAKE ALL TEXT THIN */
@@ -368,4 +370,7 @@ ul {
   top: -0.25em;
   margin-left: -40px;
   margin-right: 0.4em;
+}
+.review {
+  display: none;
 }

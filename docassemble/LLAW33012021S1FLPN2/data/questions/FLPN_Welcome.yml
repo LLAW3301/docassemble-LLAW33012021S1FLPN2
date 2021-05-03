@@ -16,5 +16,6 @@ buttons:
   - No, I do not agree: exit
     url: https://www.pathwaysnetworksa.com.au
 section: WelcomeScreen
+event: WelcomeScreen
 progress: 0
 ---
