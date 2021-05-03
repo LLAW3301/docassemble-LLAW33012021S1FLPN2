@@ -2,7 +2,6 @@
 
 
 Added a suggested template for the final screen to the 'main' file.
-Added a base Docx template, which someone needs to edit to make look better and add variables
 
 S1 TASKS DUE BY 11TH MAY
 

@@ -21,7 +21,7 @@ features:
   progress bar: True
   navigation: horizontal
      # creates a bar with page names at top of page
-  small screen navigation: true
+  small screen navigation: false
      # turn the navigation bar on/or for mobile use
 ---
 # Decides the page names for the navigation bar
@@ -35,13 +35,9 @@ sections:
 image sets:
   Freepik:
     images:
-      baby: crawling.svg
-      money: colormoney.svg
       phone: phone.svg
       addy: address.png
       email: mail.svg
-      bstar: blackstar.svg
-      cstar: goldstar.svg
       house: house.svg
       lawyerline: line.png
       question: question.png
