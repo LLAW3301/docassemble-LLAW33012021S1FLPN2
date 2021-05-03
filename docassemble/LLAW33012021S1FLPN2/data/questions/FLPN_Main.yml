@@ -14,7 +14,9 @@ include:
   - FLPN_DirectoryEntries.yml
   - FLPN_display_output.yml
   - FLPN_design.yml
-  - FLPN_Functions.yml
+---
+modules:
+  - .FLPN_Functions
 ---
 objects:
   - FLPNeligibleEntries: DAList.using(there_are_any=True, auto_gather=False)
