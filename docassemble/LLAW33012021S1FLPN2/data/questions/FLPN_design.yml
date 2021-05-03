@@ -7,6 +7,10 @@ metadata:
     Family Law Directory
   organisation: Flinders University
   show login: false
+  exit link: logout
+  exit url: https://www.akc.org/expert-advice/lifestyle/35-perfect-pictures-of-dogs/
+  exit label: |
+    QUICK EXIT
 ---
 features:
   css: FLPN.css
