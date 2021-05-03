@@ -1,70 +1,37 @@
 ---
+# The Family Law Pathways Logo on the top left
 objects:
   - MJFlogo: DAStaticFile.using(filename='FLPN_logo4.png')
 ---
-mandatory: True
+#dictates the size of the FLPN logo
+mandatory: true
 code: |
   set_parts(logo='<img src="' + MJFlogo.url_for() + '" style="height: 60px;">')
 ---
 # add all other yml files here
 include:
-  - FLPN_Welcome.yml
-# Make sure not to change order, otherwise welcome screen might not be run first
   - FLPN_Questions.yml
   - FLPN_DirectoryEntries.yml
   - FLPN_display_output.yml
   - FLPN_design.yml
 ---
-modules:
-  - .FLPN_Functions
----
-objects:
-  - FLPNeligibleEntries: DAList.using(there_are_any=True, auto_gather=False)
-  - endpoints: DADict
----
-# This code drives the app
-mandatory: True
-code: |
-  # make empty DAlist
-  FLPNeligibleEntries.clear()
-  
-  for entry in FLPN2_lawyerlist:
-    # set all entries to eligible by default
-    entry["eligible"] = True
-    
-    # Check whether user selected service area that this lawyer candidate services
-    if not (int(FLPNregion) in entry.item("service_area")):
-      entry["eligible"] = False
-    
-    # Check whether user said they need a non-English speaking lawyer, and that this lawyer candidate said they do not speak more than one language.
-    if (FLPNlanguage == True) and (entry["language"] == False):
-      entry["eligible"] = False
-    
-    # when entry ends this process as "eligible" append to eligibleEntries list
-    if entry["eligible"] == True:
-      FLPNeligibleEntries.append(entry)
-  
-  #signal that this block gathers FLPNeligibleEntries
-  FLPNeligibleEntries.gathered = True
-  
-  #go to final screen
-  endpoints['final_screen']
-  
-  menu_items = [ action_menu_item('Roadmap', 'road_map') ]
----
+#This is the final screen for the application
 event: endpoints['final_screen']
 question: ""
 subquestion: |
-  <!-- REMEMBER to use HTML comment tags in html area, otherwise adding regular comments makes docassemble think it's the end of the "subquestion", and it gives parserError (beware: HTML comments are visible to users in inspect element) -->
-  <!-- 3 different options -->
   <div class='resultstitle'> BASED ON YOUR RESPONSES </div>
-  <!-- 1) launage + area -->
-  
+  <!-- Option #1 ) Eligible entries exist -->
   % if len(FLPNeligibleEntries) > 0:
-   <br>Here is a list of ${ FLPNeligibleEntries.number() } family lawyers matching your search criteria. Please contact the lawyers below for more information. <br><br>
-   
+  % if FLPNlanguage == True:
+  <br> Here is a list of ${ FLPNeligibleEntries.number() } family lawyers in  <span class='answer'> ${ regionToString(FLPNregion) }</span> who may be able to provide services in <span class='answer'>languages other than English</span>.
+  % else:
+  <br> Here is a list of ${ FLPNeligibleEntries.number() } family lawyers in  <span class='answer'> ${ regionToString(FLPNregion) }.</span>
+  % endif
+  Please contact the lawyers below for more information.<br><br>
+  
    <div class='disclaimer'>The information below is what has been provided by the lawyers themselves. We cannot guarantee the accuracy of this information, and cannot be held responsible for any issues that may arise with their engagement.</div>
-   
+            <!-- the table the results will be displayed in -->
+            
   &nbsp; | &nbsp;
   ---------------|----------------
   %for entry in FLPNeligibleEntries:
@@ -72,10 +39,13 @@ subquestion: |
   %endfor
   % endif
 
-  <!-- 3) No eligible lawyers found -->
-  
-  % if len(FLPNeligibleEntries) < 1:
-  <br>Unfortunately, we weren't able to find any lawyers matching your search criteria. You can try searching in a different region. Otherwise you will need to make your own enquiries into finding a family lawyer.<br><br>
+  <!-- Option #2 ) No eligible entries -->
+  % if len(FLPNeligibleEntries) < 1:  
+  % if FLPNlanguage == True:
+  <br>Unfortunately, we weren't able to find any family lawyers in  <span class='answer'>${ regionToString(FLPNregion) }</span> who can provide services in <span class='answer'>languages other than English</span>. You can try searching in a different region, otherwise you will need to make your own enquiries into finding a family lawyer.<br><br>
+  % else:
+  <br>Unfortunately, we weren't able to find any family lawyers in  <span class='answer'>${ regionToString(FLPNregion) }</span>. You can try searching in a different region, otherwise you will need to make your own enquiries into finding a family lawyer.<br><br>
+  % endif  
   % endif
 
   <!-- DISPLAY NO MATTER WHAT -->
@@ -84,6 +54,7 @@ subquestion: |
    <center>[Legal Services Commission of South Australia](https://lsc.sa.gov.au)</center> <br>
 attachment code: |
   FLPNprintout
+# this will generate the PDF. Further editing of this attachment can be done on the FLPN_design.yml
 buttons:
   - Exit: exit
     url: https://www.pathwaysnetworksa.com.au

@@ -6,6 +6,10 @@ template: FLPN2_lawyerlist[i]['display_record']
 content: |
     <div class='box'><div class='lawyer'>[${ FLPN2_lawyerlist[i].item('lawyer') }]( ${ FLPN2_lawyerlist[i].item('website') }) </div> [FILE line.png] <br> <div class='lawresults'> :house: ${ FLPN2_lawyerlist[i].item('law_firm') } <br> :phone: ${ FLPN2_lawyerlist[i].item('phone') } <br> :email: ${ FLPN2_lawyerlist[i].item('email') } <br> :addy: ${ FLPN2_lawyerlist[i].item('address') } <br> <br> ** Experience ** <br> ${ formatListIntoHTML(FLPN2_lawyerlist[i]['experience']) } <br> ** Fee Information ** <br> ${ formatListIntoHTML(FLPN2_lawyerlist[i]['fees']) } <br> </div></div>
 ---
+objects:
+  - FLPNeligibleEntries: DAList.using(there_are_any=True, auto_gather=False)
+  - endpoints: DADict
+---
 # formats multi-string list into a single-line HTML string (to work around docassemble tables newline issue)
 code: |
   def formatListIntoHTML(list):
@@ -13,4 +17,34 @@ code: |
     for x in list:
       output = output + "<li>" + x + "</li>"
     return output
+---
+# This is the code drives the app
+mandatory: True
+code: |
+  # make empty DAlist
+  FLPNeligibleEntries.clear()
+  
+  for entry in FLPN2_lawyerlist:
+    # set all entries to eligible by default
+    entry["eligible"] = True
+    
+    # Check whether user selected service area that this lawyer candidate services
+    if not (int(FLPNregion) in entry.item("service_area")):
+      entry["eligible"] = False
+    
+    # Check whether user said they need a non-English speaking lawyer, and that this lawyer candidate said they do not speak more than one language.
+    if (FLPNlanguage == True) and (entry["language"] == False):
+      entry["eligible"] = False
+    
+    # when entry ends this process as "eligible" append to eligibleEntries list
+    if entry["eligible"] == True:
+      FLPNeligibleEntries.append(entry)
+  
+  #signal that this block gathers FLPNeligibleEntries
+  FLPNeligibleEntries.gathered = True
+  
+  #go to final screen
+  endpoints['final_screen']
+  
+  menu_items = [ action_menu_item('Roadmap', 'road_map') ]
 ---
