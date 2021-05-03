@@ -15,6 +15,10 @@ include:
   - FLPN_display_output.yml
   - FLPN_design.yml
 ---
+# .py file for functions
+modules:
+  - .FLPN_Functions
+---
 #This is the final screen for the application
 event: endpoints['final_screen']
 question: ""
