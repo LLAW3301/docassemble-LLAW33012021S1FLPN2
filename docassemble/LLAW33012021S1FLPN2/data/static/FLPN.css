@@ -20,22 +20,22 @@
 .navbar .nav-item a{
     font-size: 15px;
     font-weight: 700;
-    color: rgb(255,255,255) !important;
+    color: rgb(196, 48, 31) !important;
     border-color: rgb(0,0,0) !important;
     border-width: 3px !important;
     border-style: solid;
-    background-color: rgb(196, 48, 31) !important;
+    background-color: rgb(255,255,255) !important;
     border-radius: 5px !important;
     letter-spacing: 1px;
 }
 .navbar .nav-item a:hover{
     font-size: 15px;
     font-weight: 700;
-    color: rgb(0,0,0) !important;
+    color: rgb(255,255,255) !important;
     border-color: rgb(0,0,0) !important;
     border-width: 3px !important;
     border-style: solid;
-    background-color: rgb(255, 127, 112) !important;
+    background-color: rgb(196, 48, 31) !important;
     border-radius: 5px !important;
     letter-spacing: 1px;
 }
