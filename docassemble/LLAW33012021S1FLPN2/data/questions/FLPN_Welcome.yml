@@ -15,6 +15,6 @@ buttons:
   - Yes, I agree: continue
   - No, I do not agree: exit
     url: https://www.pathwaysnetworksa.com.au
-section: Welcome
+section: WelcomeScreen
 progress: 0
 ---

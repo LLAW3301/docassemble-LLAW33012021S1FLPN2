@@ -14,6 +14,7 @@ include:
   - FLPN_DirectoryEntries.yml
   - FLPN_display_output.yml
   - FLPN_design.yml
+  - FLPN_Functions.yml
 ---
 objects:
   - FLPNeligibleEntries: DAList.using(there_are_any=True, auto_gather=False)
@@ -86,5 +87,5 @@ buttons:
     url: https://www.pathwaysnetworksa.com.au
   - Restart: restart
 progress: 100
-section: Results
+section: ResultScreen
 ---

@@ -97,12 +97,12 @@ fields:
         - District Council of the Copper Coast
         - Yorke Peninsula Council.
 progress: 33
-section: Location
+section: LocQ
 ---
 question: |
   Do you require a lawyer who speaks a language other than English?
 yesno: FLPNlanguage
 progress: 66
-section: Language
+section: LanQ
 ---
   
