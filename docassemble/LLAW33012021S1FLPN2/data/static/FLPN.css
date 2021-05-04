@@ -5,10 +5,6 @@
    border-bottom-width: 4px;
    border-bottom-style: solid;
 }
-.navbar>.container, .navbar>.container-fluid {
-    display: flex;
-    flex-wrap: wrap;
-}
 .navbar .navbar-brand{
     color : #000;
     font-weight: bolder;
@@ -20,13 +16,14 @@
 .navbar .nav-item a{
     font-size: 15px;
     font-weight: 700;
-    color: rgb(196, 48, 31) !important;
-    border-color: rgb(0,0,0) !important;
+    color: rgb(68,48,148) !important;
+    border-color: rgb(68,48,148) !important;
     border-width: 3px !important;
-    border-style: solid;
-    background-color: rgb(255,255,255) !important;
-    border-radius: 5px !important;
-    letter-spacing: 1px;
+    background-color: rgb(225, 219, 255) !important;
+    border-radius: 10px !important;
+    width: 100px;
+    text-align: center;
+    align-items: right;
 }
 .navbar .nav-item a:hover{
     font-size: 15px;
@@ -34,10 +31,8 @@
     color: rgb(255,255,255) !important;
     border-color: rgb(0,0,0) !important;
     border-width: 3px !important;
-    border-style: solid;
     background-color: rgb(196, 48, 31) !important;
-    border-radius: 5px !important;
-    letter-spacing: 1px;
+    border-radius: 10px !important;
 }
 .navbar .dropdown-menu{
     background-color: rgba(255,255,255);
@@ -52,9 +47,32 @@
 .navbar form button:hover{
     color: rgba(0,0,0);
 }
+@media (max-width: 768px) {
+.navbar-expand-md .navbar-toggler{
+   display: inline;
+   position: absolute;
+   right: 30px;
+   top: 15px;
+}
+.navbar>.container, .navbar>.container-fluid {
+    display: inline;
+}
+.navbar .nav-item a{
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(255,255,255) !important;
+    border-color: rgb(68,48,148) !important;
+    border-width: 3px !important;
+    background-color: rgb(196, 48, 31) !important;
+    border-radius: 10px !important;
+    width: 100px;
+    position: relative;
+    right: -90px;
+}
+}
     /* NAVIGATION LIST */
 .danav-horiz {
-  padding-top: 70px;
+  padding-top: 30px;
   font-size: 15px;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
@@ -162,7 +180,7 @@ a:visited {
 }
     /* STYLE OF ANSWERS USED IN FINAL SCREEN/REVIEW SCREEN */
 span.answer {
-  font-weight: 300;
+  font-weight: 400;
   color: rgb(68,48,148);
 }
     /* STYLE OF THE LEGAL DISCLAIMER */
@@ -230,6 +248,12 @@ span.answer {
   border-color: rgb(0,0,0,0);
   font-weight: 300;
 }
+.btn-primary:disabled {
+  color: rgb(0,0,0);
+  background-color: rgb(224, 224, 224);
+  border-color: rgb(0,0,0,0);
+  font-weight: 300;
+}
 .btn-primary:not(:disabled):not(.disabled):active{
   color: rgb(0,0,0);
   background-color: rgb(106, 207, 87);
@@ -256,6 +280,12 @@ span.answer {
   border-color: rgb(0,0,0,0);
   font-weight: 300;
 }
+.btn-danger:disabled {
+  color: rgb(0,0,0);
+  background-color: rgb(0,0,0);
+  border-color: rgb(0,0,0,0);
+  font-weight: 300;
+}
 .btn-danger:not(:disabled):not(.disabled):active{
   color: rgb(0,0,0);
   background-color: rgb(191, 111, 111);
@@ -273,6 +303,12 @@ span.answer {
 .btn-secondary:hover{
   color: rgb(255,255,255);
   background-color: rgb(199,35,50,0.7);
+  border-color: rgb(0,0,0,0);
+  font-weight: 300;
+}
+.btn-secondary:disabled {
+  color: rgb(0,0,0);
+  background-color: rgb(224, 224, 224);
   border-color: rgb(0,0,0,0);
   font-weight: 300;
 }
@@ -313,6 +349,12 @@ span.answer {
   border-color: rgb(0,0,0,0);
   font-weight: 300;
 }
+.btn-warning:disabled {
+  color: rgb(0,0,0);
+  background-color: rgb(224, 224, 224);
+  border-color: rgb(0,0,0,0);
+  font-weight: 300;
+}
     /* STYLE OF RADIO BUTTONS */
 .btn-light:{
   color: rgb(0,0,0);
@@ -328,6 +370,12 @@ span.answer {
   font-weight: 300;
   text-decoration: none;
   position: relative;
+}
+.btn-link:disabled {
+  color: rgb(0,0,0);
+  background-color: rgb(224, 224, 224);
+  border-color: rgb(0,0,0,0);
+  font-weight: 300;
 }
 .btn-link:hover{
   color: rgb(255,255,255);
@@ -356,6 +404,12 @@ a.btn.btn-sm.btn-success.da-review-action.da-review-action-button {
   font-weight: 300;
   color: rgb(255,255,255);
 }
+.btn-success:disabled {
+  color: rgb(0,0,0);
+  background-color: rgb(224, 224, 224);
+  border-color: rgb(0,0,0,0);
+  font-weight: 300;
+}
 a.btn.btn-sm.btn-success.da-review-action.da-review-action-button:hover {
   color: rgb(255,255,255);
 }
@@ -368,6 +422,7 @@ a.btn.btn-sm.btn-success.da-review-action.da-review-action-button:hover {
     /* MAKE ALL TEXT THIN */
 .container{
   font-weight: 300;
+  font-family: 'Mulish', sans-serif;
 }
     /* STYLE FOR LAWYER NAME IN RESULTS TABLE */
 .lawyer{
@@ -388,7 +443,7 @@ ul {
     /* STYLE BULLET LIST IN RESULTS TABLE */
 .box li {
   list-style: none;
-  text-indent: -15px;
+  text-indent: -11px;
   margin-left: 20px;
 }
 .box li::before{
@@ -403,11 +458,12 @@ ul {
   border-width: 2px;
   border-color: rgb(68,48,148);
   width: 250px;
+  font-family: 'Mulish', sans-serif;
 }
     /* STYLE BULLET LIST IN POP-OVER HINT */
 .popover li{
   list-style: none;
-  text-indent: 27px;
+  text-indent: 25px;
   margin-left: -20px;
   margin-right: -25px;
 }

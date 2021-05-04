@@ -11,7 +11,7 @@ subquestion: |
   <div class='disclaimer'> <h3>Disclaimer</h3>The Information contained in this directory has been provided by the participating practicing lawyers and therefore, Relationships Australia (SA) cannot guarantee the accuracy of any information provided. Relationships Australia (SA) also does not recommend any of the listed lawyers and are not liable for any issues arising from their engagement. Information provided by this app is not an adequate substitute for professional legal advice, it is merely a guide and users are encouraged to make their own enquiries with the listed lawyers or alternatively, through <a href="https://www.lawsocietysa.asn.au">The Law Society of South Australia</a> or the <a href="https://lsc.sa.gov.au">Legal Services Commission of South Australia</a>.</div><br> 
  
 
-  By clicking "I agree and wish to continue", the user is agreeing to the disclaimer.
+  By clicking "I agree and wish to continue", the user is agreeing to the disclaimer.<br><br>
 buttons:
   - Yes, I agree: continue
   - No, I do not agree: exit

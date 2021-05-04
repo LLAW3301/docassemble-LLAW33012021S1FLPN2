@@ -6,7 +6,7 @@ objects:
 #dictates the size of the FLPN logo
 mandatory: true
 code: |
-  set_parts(logo='<img src="' + MJFlogo.url_for() + '" style="height: 60px;">')
+  set_parts(logo='<img src="' + MJFlogo.url_for() + '" style="height: 50px;">')
 ---
 # add all other yml files here
 include:
