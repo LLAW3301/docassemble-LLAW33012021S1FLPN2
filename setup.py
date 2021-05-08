@@ -45,7 +45,7 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
 setup(name='docassemble.LLAW33012021S1FLPN2',
       version='0.0.1',
       description=('A docassemble extension.'),
-      long_description="## TODO\r\n\r\n\r\nAdded a suggested template for the final screen to the 'main' file.\r\n\r\nS1 TASKS DUE BY 11TH MAY\r\n\r\n- Update the PSD (law students only)\r\n- Enough functionality to show all end points\r\n- Draft document template for results\r\n- comments throughout the code to explain whats going on - ONGOING, add to all new commits\r\n- use Pull Requests to merge your changes into branch: prototype before the submission deadline!\r\n- Make style nicer in FLPNprintout\r\n- Fix bug where printout displays incorrectly (sometimes no entries at all) if answers are changed (through navigation system)\r\n",
+      long_description="## TODO\r\n\r\n\r\nAdded a suggested template for the final screen to the 'main' file.\r\n\r\nS1 TASKS DUE BY 11TH MAY\r\n\r\n- Update the PSD (law students only)\r\n- Enough functionality to show all end points\r\n- Draft document template for results\r\n- comments throughout the code to explain whats going on - ONGOING, add to all new commits\r\n- **use Pull Requests to merge your changes into branch: prototype before the submission deadline!**\r\n- Make style nicer in FLPNprintout\r\n- Fix bug where printout displays incorrectly (sometimes no entries at all) if answers are changed (through navigation system)\r\n",
       long_description_content_type='text/markdown',
       author='Mark Ferraretto',
       author_email='mark.ferraretto@flinders.edu.au',

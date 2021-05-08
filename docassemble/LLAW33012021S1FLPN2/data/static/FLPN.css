@@ -47,7 +47,7 @@
 .navbar form button:hover{
     color: rgba(0,0,0);
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 .navbar-expand-md .navbar-toggler{
    display: inline;
    position: absolute;
@@ -476,7 +476,7 @@ ul {
 }
 div.dachoicehelp a {
     text-decoration: none;
-    color: rgb(127, 104, 217);
+    color: rgb(127, 104, 217) !important;
     cursor: pointer;
     font-size: 25px;
     outline: none;
@@ -484,7 +484,7 @@ div.dachoicehelp a {
 }
 div.dachoicehelp a:hover {
     text-decoration: none;
-    color: rgb(68,48,148);
+    color: rgb(68,48,148) !important;
     cursor: pointer;
     font-size: 25px;
     outline: none;
