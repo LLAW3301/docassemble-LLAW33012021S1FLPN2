@@ -10,14 +10,6 @@ objects:
   - FLPNeligibleEntries: DAList.using(there_are_any=True, auto_gather=False)
   - endpoints: DADict
 ---
-# formats multi-string list into a single-line HTML string (to work around docassemble tables newline issue)
-code: |
-  def formatListIntoHTML(list):
-    output = ""
-    for x in list:
-      output = output + "<li>" + x + "</li>"
-    return output
----
 # This is the code drives the app
 mandatory: True
 code: |
@@ -25,6 +17,9 @@ code: |
   FLPNeligibleEntries.clear()
   
   for entry in FLPN2_lawyerlist:
+    # add hyperlink markdown to all entries (for docx template
+    entry["hyperlink"] = "[{}]({})".format(entry['lawyer'], entry['website'])
+  
     # set all entries to eligible by default
     entry["eligible"] = True
     
