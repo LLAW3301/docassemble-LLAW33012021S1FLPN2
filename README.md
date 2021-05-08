@@ -9,6 +9,6 @@ S1 TASKS DUE BY 11TH MAY
 - Enough functionality to show all end points
 - Draft document template for results
 - comments throughout the code to explain whats going on - ONGOING, add to all new commits
-- use Pull Requests to merge your changes into branch: prototype before the submission deadline!
+- **use Pull Requests to merge your changes into branch: prototype before the submission deadline!**
 - Make style nicer in FLPNprintout
 - Fix bug where printout displays incorrectly (sometimes no entries at all) if answers are changed (through navigation system)
