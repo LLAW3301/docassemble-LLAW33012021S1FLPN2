@@ -19,6 +19,7 @@ buttons:
 section: WelcomeScreen
 event: WelcomeScreen
 progress: 0
+undefine: FLPNprintout
 ---
 question: |
   What region are you located in?
@@ -119,10 +120,12 @@ fields:
         - Yorke Peninsula Council.
 progress: 33
 section: LocQ
+undefine: FLPNprintout
 ---
 question: |
   Do you require a lawyer who speaks a language other than English?
 yesno: FLPNlanguage
 progress: 66
 section: LanQ
+undefine: FLPNprintout
 ---

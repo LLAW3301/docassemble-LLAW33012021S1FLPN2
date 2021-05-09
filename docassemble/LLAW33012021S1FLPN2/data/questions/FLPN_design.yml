@@ -15,7 +15,7 @@ metadata:
 features:
   css: FLPN.css
      # include css document for visual design 
-  debug: false
+  debug: true
      # display/remove 'source' button
   hide standard menu: false
   navigation back button: False
@@ -27,6 +27,7 @@ features:
      # creates a bar with page names at top of page
   small screen navigation: true
      # turn the navigation bar on/or for mobile use
+  cache documents: false
 ---
 # Decides the page names for the navigation bar
 sections:

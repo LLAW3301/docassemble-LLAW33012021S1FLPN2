@@ -238,19 +238,25 @@ span.answer {
 }
 .btn-primary:hover{
   color: rgb(255,255,255);
-  background-color: rgb(62,199,35,0.7);
+  background-color: rgb(62,199,35,0.7) !important;
   border-color: rgb(0,0,0,0);
   font-weight: 300;
 }
 .btn-primary:active {
   color: rgb(0,0,0);
-  background-color: rgb(172, 239, 172);
+  background-color: rgb(172, 239, 172) !important;
   border-color: rgb(0,0,0,0);
   font-weight: 300;
 }
 .btn-primary:disabled {
   color: rgb(0,0,0);
-  background-color: rgb(224, 224, 224);
+  background-color: rgb(224, 224, 224) !important;
+  border-color: rgb(0,0,0,0);
+  font-weight: 300;
+}
+.btn-primary:focus {
+  color: rgb(255,255,255);
+  background-color: rgb(62,199,35);
   border-color: rgb(0,0,0,0);
   font-weight: 300;
 }
