@@ -17,8 +17,11 @@ code: |
   FLPNeligibleEntries.clear()
   
   for entry in FLPN2_lawyerlist:
-    # add hyperlink markdown to all entries (for docx template
-    entry["hyperlink"] = "[{}]({})".format(entry['lawyer'], entry['website'])
+    # add hyperlink markdown to all entries (for docx template)
+    entry["hyperlinkForName"] = "[{}]({})".format(entry['lawyer'], entry['website'])
+    entry["hyperlinkForURL"] = "[{}]({})".format(entry['website'], entry['website'])
+    entry["hyperlinkForEmail"] = "[{}](mailto:{})".format(entry['email'], entry['email'])
+    entry["hyperlinkForPhone"] = "[{}](tel:{})".format(entry['phone'], entry['phone'])
   
     # set all entries to eligible by default
     entry["eligible"] = True
