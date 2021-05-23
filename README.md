@@ -17,7 +17,6 @@ S1 TASKS DUE BY 11TH MAY
 
 Feedback from S1
 
-- If you don't have anyone in region, no point asking second question
 - Make URL for website clickable, make email/phone numbers clickable
 - Avoid gross line break in printout, tell word to not paginate
 - Repeat row headers on each new page
