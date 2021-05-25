@@ -53,10 +53,6 @@ code: |
       # Check whether user said they need a non-English speaking lawyer, and that this lawyer candidate said they do not speak more than one language.
       if (FLPNlanguage == True) and (entry["language"] == False):
         entry["eligible"] = False
-    
-    # when entry ends this process as "eligible" append to eligibleEntries list
-    #if entry["eligible"] == True:
-      #FLPNeligibleEntries.append(entry)
   else:
     FLPN_cutshort = True
   
@@ -67,8 +63,11 @@ code: |
   #signal that this block gathers FLPNeligibleEntries
   FLPNeligibleEntries.gathered = True
   
-  #go to final screen
-  endpoints['final_screen']
+  if(len(FLPNeligibleEntries)>0):
+    #go to final screen
+    endpoints['final_screen']
+  else:
+    endpoints['none_eligible']
   
   menu_items = [ action_menu_item('Roadmap', 'road_map') ]
 ---

@@ -17,10 +17,8 @@ S1 TASKS DUE BY 11TH MAY
 
 Feedback from S1
 
-- Make URL for website clickable, make email/phone numbers clickable
 - Avoid gross line break in printout, tell word to not paginate
 - Repeat row headers on each new page
 - Make dark purple bar update when reviewing questions (consistent and clear)
 - Make purple bar update roughly to position of navigation button
 - Possibly make bar have sections (not sure how)
-- Maybe remove the printout when there’s no results
