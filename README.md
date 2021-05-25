@@ -22,7 +22,7 @@ Feedback from S1
 - (IN PROGRESS) Make dark purple bar update when reviewing questions (consistent and clear)
 - (COMPLETED KINDA) Make purple bar update roughly to position of navigation button (added percentage)
 - (CANT DO) Possibly make bar have sections (not sure how)
-- (IN PROGRESS) Maybe remove the printout when there’s no results
+- (COMPLETED) Maybe remove the printout when there’s no results
 
 **Read Me Instructions**
 
