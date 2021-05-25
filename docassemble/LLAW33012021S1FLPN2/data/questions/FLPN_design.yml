@@ -11,11 +11,20 @@ metadata:
   exit url: https://www.akc.org/expert-advice/lifestyle/35-perfect-pictures-of-dogs/
   exit label: |
     QUICK EXIT
+  authors:
+    - name: Jessica Moncrieff
+      organisation: Flinders University
+    - name: Michael Doroch
+      organisation: Flinders University
+    - name: Ebony Algate
+      organisation: Flinders University
+    - name: Nathaniel Ramesh
+      organisation: Flinders University
 ---
 features:
   css: FLPN.css
      # include css document for visual design 
-  debug: true
+  debug: false
      # display/remove 'source' button
   hide standard menu: false
   navigation back button: False
