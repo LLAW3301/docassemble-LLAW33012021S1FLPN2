@@ -23,6 +23,7 @@ features:
   question back button: True
      # creates a 'back' button next to the 'continue' button
   progress bar: True
+  show progress bar percentage: True
   navigation: horizontal
      # creates a bar with page names at top of page
   small screen navigation: true
@@ -46,6 +47,7 @@ review:
   - Change: FLPNregion
     button: |
       You said you are located in <span class='answer'> ${ regionToString(FLPNregion) } </span> <br><br><br><br>
+progress: 33
 ---
 event: LanQ
 section: LanQ
@@ -60,6 +62,7 @@ review:
           You said you <span class='answer'>do not</span> require a lawyer who speaks a language other than English.
        % endif
        <br><br><br><br>
+progress: 66
 ---
 # allows pictures to be used as icons in text
 image sets:

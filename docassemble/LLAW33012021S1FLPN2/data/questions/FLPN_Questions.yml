@@ -125,7 +125,7 @@ undefine: FLPNprintout
 question: |
   Do you require a lawyer who speaks a language other than English?
 yesno: FLPNlanguage
-progress: 66
+progress: 70
 section: LanQ
 undefine: FLPNprintout
 ---

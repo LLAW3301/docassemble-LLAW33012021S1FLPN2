@@ -2,7 +2,7 @@
 .navbar{
    background-color: rgb(214, 208, 245) !important;
    border-bottom-color: rgb(68,48,148);
-   border-bottom-width: 4px;
+   border-bottom-width: 6px;
    border-bottom-style: solid;
 }
 .navbar .navbar-brand{
@@ -100,7 +100,10 @@
     overflow: hidden;
     font-size: .75rem;
     background-color: #e9ecef;
-    border-radius: .25rem;
+    border-radius: .75rem;
+    height: 23px;
+    font-weight: 450;
+    letter-spacing: 1px;
 }
 .progress-bar {
     display: -ms-flexbox;
@@ -112,7 +115,8 @@
     color: #fff;
     text-align: center;
     white-space: nowrap;
-    background-color: rgb(68,48,148);
+    background-image: linear-gradient(to right, rgb(68,48,148) , rgb(179, 170, 230));
+    /* background-color: rgb(68,48,148);  */
     transition: width .6s ease;
 }
     /* LOADING SPINNING WHEEL */

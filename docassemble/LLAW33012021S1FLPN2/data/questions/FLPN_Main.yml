@@ -69,3 +69,30 @@ buttons:
 progress: 100
 section: ResultScreen
 ---
+#This is the final screen for the application
+event: endpoints['none_eligible']
+question: ""
+subquestion: |
+  <div class='resultstitle'> BASED ON YOUR RESPONSES </div>
+  <!-- Option #2 ) No eligible entries -->
+  % if len(FLPNeligibleEntries) < 1:  
+  % if not FLPN_cutshort:
+  % if FLPNlanguage == True:
+  <br>Unfortunately, we weren't able to find any family lawyers in  <span class='answer'>${ regionToString(FLPNregion) }</span> who can provide services in <span class='answer'>languages other than English</span>. You can try searching in a different region, otherwise you will need to make your own enquiries into finding a family lawyer.<br><br>
+  % endif:
+  % else:
+  <br>Unfortunately, we weren't able to find any family lawyers in  <span class='answer'>${ regionToString(FLPNregion) }</span>. You can try searching in a different region, otherwise you will need to make your own enquiries into finding a family lawyer.<br><br>
+  % endif  
+  % endif
+
+  <!-- DISPLAY NO MATTER WHAT -->
+   <div class='resultstitle'> LINKS TO MORE INFORMATION </div><br>
+   <center> [The Law Society of South Australia](https://www.lawsocietysa.asn.au)</center>
+   <center>[Legal Services Commission of South Australia](https://lsc.sa.gov.au)</center> <br>
+buttons:
+  - Exit: exit
+    url: https://www.pathwaysnetworksa.com.au
+  - Restart: restart
+progress: 100
+section: ResultScreen
+---
