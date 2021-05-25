@@ -29,7 +29,7 @@ You may credit yourselves in the README.md if you wish (but this is not required
 
 ------------------------------------------------------------------------------------
 
-**Family Law Directory**
+## FAMILY LAW DIRECTORY
 
 ***Created by*** *Jessica Moncrieff, Michael Doroch, Ebony Algate, and Nathaniel Ramesh*
 
