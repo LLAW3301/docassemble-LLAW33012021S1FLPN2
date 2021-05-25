@@ -1,8 +1,5 @@
 ## TODO
 
-
-Added a suggested template for the final screen to the 'main' file.
-
 S2 TASKS DUE BY 11TH MAY
 
 - Update the PSD (law students only)
