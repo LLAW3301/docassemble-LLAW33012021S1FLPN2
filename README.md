@@ -6,12 +6,12 @@ Added a suggested template for the final screen to the 'main' file.
 S2 TASKS DUE BY 11TH MAY
 
 - Update the PSD (law students only)
-- Disable debug
-- Add authors to metadata
+- (COMPLETED) Disable debug
+- (COMPLETED) Add authors to metadata
 - (COMPLETED) Interview title set to descriptive name
-- update read me (see below)
+- (COMPLETED) update read me (see below)
 - (COMPLETED) Flinders attribution
-- Default values (I dont think this applies for our app)
+- (????) Default values (I dont think this applies for our app)
 - push to 'final' branch
 
 Feedback from S1
@@ -30,10 +30,12 @@ The README.md file for your app should contain a short description of what your 
 README.md is a Markdown file. Use appropriate Markdown tags to ensure your README.md is clear, easy to read and descriptive.
 You may credit yourselves in the README.md if you wish (but this is not required)
 
-Family Law Directory
+------------------------------------------------------------------------------------
 
-Created by Jessica Moncrieff, Michael Doroch, Ebony Algate, and Nathaniel Ramesh
-Organisation: Flinders University
+**Family Law Directory**
+
+***Created by*** *Jessica Moncrieff, Michael Doroch, Ebony Algate, and Nathaniel Ramesh*
+***Organisation:*** *Flinders University*
 
 This application was created to assist couples, who are separating, in comparing and finding a family lawyer. The application will ask the user what region they are located in, and whether they require a lawyer who speaks another language. The application will then provide the user with a list of family lawyers matching their search criteria.
 
