@@ -12,6 +12,8 @@
     # 10 - Southern Adelaide
     # 11 - Western Adelaide
     # 12 - Yorke and Mid North
+   
+  # All Lawyers are alphabetically listed
 
 variable name: FLPN2_lawyerlist
 use objects: true
@@ -46,7 +48,7 @@ data:
       - 80-100% work week spent on family law
       - Experience in family trusts
     fees: 
-      - "Fee information not provided. Please contact lawyer for further details." 
+      - "Fee information not provided. Please contact lawyer for further details."
     service_area:
       - 3
     language: false
@@ -181,7 +183,8 @@ data:
       - "Independent Children's Lawyer"
       - "Specialist Family Lawyer"
       - "Member of the Legal Services Commission"
-      - "Can speak Italian or Arabic"
+      - "**Can speak fluent Italian and Arabic**"
+      - "**Can write/read fluent Arabic**"
     fees:
       - "Offers fixed-fee payment option"
       - "**Offers first consult free**"

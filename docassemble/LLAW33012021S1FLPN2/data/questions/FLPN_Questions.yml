@@ -42,7 +42,7 @@ subquestion: |
   Click the :question: icon to see what areas are included in each region.
 fields:
   no label: FLPNregion
-  datatype: checkboxes
+  datatype: radio
   choices:
     - Adelaide Hills: 1
       help: |
