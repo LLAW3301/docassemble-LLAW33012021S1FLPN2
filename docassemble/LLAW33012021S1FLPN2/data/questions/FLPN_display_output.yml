@@ -39,7 +39,13 @@ code: |
   
   for entry in FLPN2_lawyerlist:
     # Check whether user selected service area that this lawyer candidate services
-    if not (int(FLPNregion) in entry.item("service_area")):
+    inAnyFlag = False
+    for region, trueFalse in FLPNregion.items():
+      # FLPNregion formatted like: {"1": True, "2": False, "3":True, etc}, so need to check if flag is set for each one
+      if(trueFalse == True and (int(region) in entry.item("service_area"))):
+        inAnyFlag = True
+    # if none of the specified regions match what the lawyer services, set uneligible
+    if inAnyFlag == False:
       entry["eligible"] = False
   
   # remove entires flagged as "eligible"=false (after region selected)
