@@ -4,14 +4,29 @@ mandatory: True
 question: Family Law Directory
 subquestion: |
   
-  Welcome to the **Family Law Directory**. [BR] [BR] This application has been developed to help you find and compare family lawyers in your area. [BR] [BR]
+  Welcome to the **Family Law Lawyer Directory**. [BR] [BR] This application has been developed to help you find and compare Family Law Lawyers in your area. [BR] [BR]
   
-  <div class='disclaimer'> <h3>Privacy Statement</h3>Any information you provide this directory with will only be used for the sole purpose of helping you to find a suitable Family Lawyer. The information you provide this directory with will not be stored. View our privacy statement <a href='https://www.rasa.org.au/about/privacy-and-confidentiality/'>here</a>. Alternatively, you can contact us on 08 8419 2000.</div><br>
+  <div class='disclaimer'> <h3>Who We Are</h3>The Family Law Pathways Network was established in 2003 by the Federal Government, in response to a need for information about family law services to be made available to as many people experiencing separation or engaging with the family law system as possible.</div><br>
   
-  <div class='disclaimer'> <h3>Disclaimer</h3>The Information contained in this directory has been provided by the participating practicing lawyers and therefore, Relationships Australia (SA) cannot guarantee the accuracy of any information provided. Relationships Australia (SA) also does not recommend any of the listed lawyers and are not liable for any issues arising from their engagement. Information provided by this app is not an adequate substitute for professional legal advice, it is merely a guide and users are encouraged to make their own enquiries with the listed lawyers or alternatively, through <a href="https://www.lawsocietysa.asn.au">The Law Society of South Australia</a> or the <a href="https://lsc.sa.gov.au">Legal Services Commission of South Australia</a>.</div><br> 
+  <div class='disclaimer'>Funded by the Attorney General’s Department, the Family Law Pathways Network has developed into a coordinated network of professionals and agencies operating within the broader family law system in each State and Territory.</div><br>
+  
+  <div class='disclaimer'>The overarching aim of the Network is to foster dialogue and collaboration between organisations and professionals to help separating and separated families access appropriate services. The Network encourages collaborative referrals, enhances understanding of available services, and represents an essential component of the Government’s wider commitment to an accessible justice system that meets the needs of Australian families.</div><br>
+  
+  <div class='disclaimer'>The South Australian Family Law Pathways Network operates under the auspice agency of Relationships Australia SA.  This Directory is owned by Relationships Australia SA, but operated entirely by the Senior Coordinator of the Family Law Pathways Network, South Australia.</div><br>
+  
+  <div class='disclaimer'>All references to “Pathways” means Relationships Australia SA and Family Law Pathways Network, South Australia.</div><br>
+  
+  <div class='disclaimer'> <h3>Privacy Statement</h3>Any information you provide when using this Directory will be used for the sole purpose of helping you find a suitable Family Law Lawyer. No information will be stored by Pathways, or shared with any third party.</div><br>
+  
+  <div class='disclaimer'> <h3>Disclaimer</h3>The Information contained in this Directory has been provided by the participating practicing lawyers and therefore, Pathways cannot guarantee the accuracy of any information provided and we make no claims as to the suitability of any lawyer for your particular needs. You should make your own enquiries about the accuracy of the information and the suitability of any lawyer. More information can be obtained from the lawyers themselves, or the <a href="https://www.lawsocietysa.asn.au">The Law Society of South Australia</a>.
+  In addition, this Directory only provides details of participating lawyers. There may be other lawyers who might be suitable for your needs. The Law Society of South Australia has a referral service that can be accessed through its website or by phoning 8229 0200.</div><br> 
+
+  <div class='disclaimer'> Pathways does not recommend any of the listed lawyers and are not liable for any issues arising from their engagement.</div><br> 
+
+  <div class='disclaimer'> For further information, or if you have any questions, please call 08 8419 2000 or email Pathways@rasa.org.au </div><br> 
  
 
-  By clicking "I agree and wish to continue", the user is agreeing to the disclaimer.<br><br>
+  By clicking "I agree and wish to continue", you are confirming that you have read and agree to our Privacy Statement and Disclaimer.<br><br>
 buttons:
   - Yes, I agree: continue
   - No, I do not agree: exit
