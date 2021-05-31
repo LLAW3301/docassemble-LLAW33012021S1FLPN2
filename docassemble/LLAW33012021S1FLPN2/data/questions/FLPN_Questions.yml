@@ -26,7 +26,7 @@ subquestion: |
   <div class='disclaimer'> For further information, or if you have any questions, please call 08 8419 2000 or email Pathways@rasa.org.au </div><br> 
  
 
-  By clicking "I agree and wish to continue", you are confirming that you have read and agree to our Privacy Statement and Disclaimer.<br><br>
+  By clicking "Yes, I agree", you are confirming that you have read and agree to our Privacy Statement and Disclaimer.<br><br>
 buttons:
   - Yes, I agree: continue
   - No, I do not agree: exit
@@ -42,7 +42,7 @@ subquestion: |
   Click the :question: icon to see what areas are included in each region.
 fields:
   no label: FLPNregion
-  datatype: radio
+  datatype: checkboxes
   choices:
     - Adelaide Hills: 1
       help: |
