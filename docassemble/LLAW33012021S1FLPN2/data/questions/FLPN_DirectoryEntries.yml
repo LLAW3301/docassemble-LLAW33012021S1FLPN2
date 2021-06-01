@@ -18,6 +18,23 @@
 variable name: FLPN2_lawyerlist
 use objects: true
 data:
+  - lawyer: Kate Annells
+    law_firm: Annells Lawyers
+    address: 256 Commercial Street, West Mount Gambier, SA 5290
+    email: annellslaw@gmail.com
+    phone: 08 8723 3212
+    website: http://www.annellslawyers.com.au
+    experience:
+        - "18 Years Experience"
+        - "60-80% work week spent on family law"
+        - "Member of the Legal Services Commission"
+    fees:
+        - "$418 per hour"
+        - "**Offers first consult free**"
+        - "Fixed fee for divorce"
+    service_area:
+        - 7
+    language: false
   - lawyer: Kerry Antoniou
     law_firm: Alpha Family Lawyers
     address: Level 3, 97 Pirie Street, Adelaide, South Australia 5000
@@ -33,7 +50,7 @@ data:
     fees:
         - $550 per hour
         - Free half hour consult
-        - Can defer frees on property settlement matters
+        - Can defer fees on property settlement matters
     service_area:
         - 3
     language: true
@@ -89,6 +106,23 @@ data:
       - 3
       - 10
     language: false
+  - lawyer: Brittany Carmody
+    law_firm: Family Violence Legal Service Aboriginal Corporation SA
+    address: 89 Liverpool Street, Port Lincoln, South Australia 5606
+    email: brittany.carmody@fvlsac.org.au
+    phone: 8683 1896
+    website: http://www.fvlsac.org.au/
+    experience:
+        - "4 Years Experience"
+        - "60-80% work week spent on family law"
+        - "**Specialises in assisting Aboriginal and Torres Strait Islander people**"
+        - "Can utilise interpreter services"
+    fees:
+        - "**A free community legal service**"
+    service_area:
+        - 4
+        - 5
+    language: true
   - lawyer: Annette Comley
     law_firm: Comley Legal
     address: 146 Gilles Street, Adelaide, South Australia 5000
@@ -154,6 +188,27 @@ data:
     service_area:
       - 1
     language: false
+  - lawyer: Deborah Hyde
+    law_firm: Hyde White Legal Services
+    address: PO Box 482, Stirling, SA 5152
+    email: Hwlegalservices@bigpond.com
+    phone: 08 8339 2861
+    website: https://hydewhitelegalservices.com.au/
+    experience:
+      - "20+ years experience"
+      - "60-80% work week spent on family law"
+      - "Experience as a Family Dispute Resolution Practioner"
+      - "Experience in Family Trusts"
+      - "Experience in Company and Business Law"
+      - "Experience in Collaborative Practice"
+      - "Can utilise interpreter services"
+    fees:
+      - "May offer scale fees"
+      - "Discounts provided on a case-by-case basis"
+      - "**Offers first consult free**"
+    service_area:
+      - 1
+    language: true
   - lawyer: Sam Lehman
     law_firm: Culshaw Miller Lawyers
     address: 49 Hindmarsh Square, Adelaide, South Australia 5000
@@ -164,7 +219,6 @@ data:
       - "7 years experience"
       - "80-100% work week spent on family law"
       - "Member of the Legal Services Commission"
-      
     fees:
       - "$418 per hour"
       - "May be able to provide low-income payment options"
@@ -194,6 +248,27 @@ data:
     service_area:
       - 3
     language: true
+  - lawyer: Julia Lloyd
+    law_firm: Teusner & Co.
+    address: 4 Elizabeth Street, Tanunda South, Australia 5352
+    email: office@teusnerlaw.com.au
+    phone: 08 8563 2627
+    website: https://www.teusnerlaw.com.au
+    experience:
+        - "20+ years of experience"
+        - "40-60% work week spent on family law"
+        - "Member of the Legal Services Commission"
+        - "Experience in Family Trusts"
+        - "Experience in Company and Business Law"
+    fees:
+        - "$440 per hour"
+        - "Fixed fee for application for divorce"
+        - "May handle legal aid matters"
+        - "May defer fees on property settlement matters until settlement"
+    service_area:
+        - 2
+        - 6
+    language: false
   - lawyer: Natalie Lloyd
     law_firm: Scammell & Co
     address: 86 Franklin Street, Adelaide, South Australia 5000
@@ -218,6 +293,25 @@ data:
       - 9
       - 10
       - 11
+    language: false
+  - lawyer: Rebecca McDougal
+    law_firm: Rebecca McDougal
+    address: Level 1, 10 Dawson Street, Strathalbyn, South Australia 5255
+    email: rebecca@strathlaw.com
+    website:
+    phone: 0439 362 365
+    experience:
+      - "18 years experience"
+      - "Family Dispute Resolution Practitioner"
+      - "Experience with legal aid matters"
+      - "Member of the Legal Services Commission"
+      - "Experience in Family Trusts"
+    fees:
+      - "May offer scale fees"
+      - "Possibility of fee discounts, deferring fees until the end of a matter or the opportunity to pay by instalments"
+    service_area:
+      - 1
+      - 6
     language: false
   - lawyer: Sam Ngai
     law_firm: Scammell & Co.
