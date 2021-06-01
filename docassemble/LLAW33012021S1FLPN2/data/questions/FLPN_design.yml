@@ -32,6 +32,7 @@ features:
   question back button: True
      # creates a 'back' button next to the 'continue' button
   progress bar: True
+  progress can go backwards: True
   show progress bar percentage: True
   navigation: horizontal
      # creates a bar with page names at top of page
@@ -57,7 +58,7 @@ review:
   - Change: FLPNregion
     button: |
       You said you are located in <span class='answer'> ${ regionToString(FLPNregion) } </span> <br><br><br><br>
-progress: 33
+progress: 50
 ---
 event: LanQ
 section: LanQ
@@ -72,7 +73,7 @@ review:
           You said you <span class='answer'>do not</span> require a lawyer who speaks a language other than English.
        % endif
        <br><br><br><br>
-progress: 66
+progress: 75
 ---
 # allows pictures to be used as icons in text
 image sets:
@@ -102,11 +103,11 @@ default screen parts:
     <div style="margin: 5px"><img src="https://staff.flinders.edu.au/etc.clientlibs/flinders/clientlibs/clientlib-site/resources/images/flinderuni_main_logo_black.png" height="40"> </div>
     <div style="margin: 5px; text-align: center; color: rgb(102, 102, 102)">
     <cite><small><i>
-    Developed by Flinders University in<br>collaboration with Relationships Australia (SA) <br>_______________________________________________________________ </div>
+    Developed by Flinders University in<br>collaboration with Relationships Australia (SA) <br>________________________________________________ </div>
     </i></small></cite>
     <div style="text-align: center; color: rgb(173, 173, 173); font-size: 11px"> Icons provided by <a href='http://www.flaticon.com/authors/freepik'>Freepiks</a></div>
     </div>
     </div>
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 ---
