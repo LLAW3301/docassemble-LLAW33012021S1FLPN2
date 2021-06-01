@@ -2,9 +2,9 @@
   # The title of the page, shown in the website tab
 metadata:
   title: |
-    Family Law Directory
+    Family Law Lawyer Directory
   short title: |
-    Family Law Directory
+    Family Law Lawyer Directory
   organisation: Flinders University
   show login: false
   exit link: logout
@@ -42,6 +42,7 @@ features:
 # Decides the page names for the navigation bar
 sections:
   - WelcomeScreen: Welcome
+  - FLPNdisclaimer: Disclaimer
   - LocQ: Location
   - LanQ: Language
   - ResultScreen: Results
