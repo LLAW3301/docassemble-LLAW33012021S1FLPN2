@@ -4,7 +4,7 @@ template: FLPN2_lawyerlist[i]['display_record']
 # BE CAREFUL OF LINE BREAKS HERE, messes up the weird proprietary docassemble table syntax, use <br> to make newlines instead.
 # With that said, sorry for absolutely awful readability
 content: |
-    <div class='box'><div class='lawyer'>[${ FLPN2_lawyerlist[i].item('lawyer') }]( ${ FLPN2_lawyerlist[i].item('website') }) </div> [FILE line.png] <br> <div class='lawresults'> :house: ${ FLPN2_lawyerlist[i].item('law_firm') } <br> :phone: ${ FLPN2_lawyerlist[i].item('hyperlinkForPhone') } <br> :email: ${ FLPN2_lawyerlist[i].item('hyperlinkForEmail') } <br> :addy: ${ FLPN2_lawyerlist[i].item('address') } <br> <br> ** Experience ** <br> ${ formatListIntoHTML(FLPN2_lawyerlist[i]['experience']) } <br> ** Fee Information ** <br> ${ formatListIntoHTML(FLPN2_lawyerlist[i]['fees']) } <br> </div></div>
+    <div class='box'><div class='lawyer'>${ FLPN2_lawyerlist[i].item('hyperlinkForWebsiteOnName') } </div> [FILE line.png] <br> <div class='lawresults'> :house: ${ FLPN2_lawyerlist[i].item('law_firm') } <br> :phone: ${ FLPN2_lawyerlist[i].item('hyperlinkForPhone') } <br> :email: ${ FLPN2_lawyerlist[i].item('hyperlinkForEmail') } <br> :addy: ${ FLPN2_lawyerlist[i].item('address') } <br> <br> ** Experience ** <br> ${ formatListIntoHTML(FLPN2_lawyerlist[i]['experience']) } <br> ** Fee Information ** <br> ${ formatListIntoHTML(FLPN2_lawyerlist[i]['fees']) } <br> </div></div>
 ---
 objects:
   - FLPNeligibleEntries: DAList.using(there_are_any=True, auto_gather=False,gathered=False)
@@ -24,14 +24,25 @@ code: |
   
   for entry in FLPN2_lawyerlist:
     # add hyperlink markdown to all entries (for docx template)
-    entry["hyperlinkForName"] = "[{}]({})".format(entry['law_firm'], entry['website'])
-    entry["hyperlinkForURL"] = "[{}]({})".format(entry['website'], entry['website'])
+    
+    # check whether entry has a website, if not, refrain from creating broken links
+    if entry['website'] == None:
+      entry['hyperlinkForWebsiteOnName'] = "{}".format(entry['lawyer'])
+      entry["hyperlinkForName"] = "{}".format(entry['law_firm'])
+      entry["hyperlinkForURL"] = "No website provided"
+    else:
+      entry['hyperlinkForWebsiteOnName'] = "[{}]({})".format(entry['lawyer'], entry['website'])
+      entry["hyperlinkForName"] = "[{}]({})".format(entry['law_firm'], entry['website'])
+      entry["hyperlinkForURL"] = "[{}]({})".format(entry['website'], entry['website'])
+
+    
+    
     entry["hyperlinkForEmail"] = "[{}](mailto:{})".format(entry['email'], entry['email'])
     entry["hyperlinkForPhone"] = "[{}](tel:{})".format(entry['phone'], entry['phone'])
   
     # set all entries to eligible by default
     entry["eligible"] = True
-  
+      
   # make empty DAlist
   FLPNeligibleEntries.clear()
   for entry in FLPN2_lawyerlist:
