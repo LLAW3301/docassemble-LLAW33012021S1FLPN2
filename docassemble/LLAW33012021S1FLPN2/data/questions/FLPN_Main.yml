@@ -33,7 +33,7 @@ subquestion: |
   % endif
   Please contact the lawyers below for more information.<br><br>
   
-   <div class='disclaimer'>The information below is what has been provided by the lawyers themselves. We cannot guarantee the accuracy of this information, and cannot be held responsible for any issues that may arise with their engagement.</div>
+   <div class='disclaimer'>The information below has been provided by the lawyers themselves. We do not guarantee the accuracy of this information, and we accept no responsibility for any issues that may arise from their engagement.</div>
    
    <!-- the table the results will be displayed in -->
             
@@ -58,7 +58,7 @@ subquestion: |
    <div class='resultstitle'> LINKS TO MORE INFORMATION </div>
    <center> [The Law Society of South Australia](https://www.lawsocietysa.asn.au)</center>
    <center>[Legal Services Commission of South Australia](https://lsc.sa.gov.au)</center><br>
-   For details of family law related services and courses please, please [click here](https://irefer.rasa.org.au/) to go to our iReferSA App.</br><br>
+   For details of family law related services and courses, please [click here](https://irefer.rasa.org.au/) to go to our iReferSA App.</br><br>
 attachment code: |
   FLPNprintout
 # this will generate the PDF. Further editing of this attachment can be done on the FLPN_design.yml
@@ -85,7 +85,6 @@ subquestion: |
   % endif  
   % endif
 
-  <!-- DISPLAY NO MATTER WHAT -->
    <div class='resultstitle'> LINKS TO MORE INFORMATION </div><br>
    <center> [The Law Society of South Australia](https://www.lawsocietysa.asn.au)</center>
    <center>[Legal Services Commission of South Australia](https://lsc.sa.gov.au)</center> <br>
