@@ -109,13 +109,13 @@ data:
   - lawyer: Brittany Carmody
     law_firm: Family Violence Legal Service Aboriginal Corporation SA
     address: 89 Liverpool Street, Port Lincoln, South Australia 5606
-    email: brittany.carmody@fvlsac.org.au
-    phone: 8683 1896
+    email: portlincoln@fvlsac.org.au
+    phone: 08 8683 1896
     website: http://www.fvlsac.org.au/
     experience:
         - "4 Years Experience"
         - "60-80% work week spent on family law"
-        - "**Specialises in assisting Aboriginal and Torres Strait Islander people**"
+        - "A free community legal service assisting Aboriginal and Torres Strait Islander victims/survivors of family violence and/or sexual assault. Works with families and communities affected by violence"
         - "**Can utilise interpreter services**"
     fees:
         - "**A free community legal service**"
@@ -313,6 +313,26 @@ data:
       - 1
       - 6
     language: false
+  - lawyer: Kate McShane
+    law_firm: Family Violence Legal Service Aboriginal Corporation SA
+    address: 89 Liverpool Street, Port Lincoln, South Australia 5606
+    email: portlincoln@fvlsac.org.au
+    phone: 1800 309 912
+    website: http://www.fvlsac.org.au/
+    experience:
+        - "6 Years Experience"
+        - "30-40% work week spent on family law"
+        - "Member of the Family Law Section, Law Council of Australia"
+        - "Experience in Family Trusts"
+        - "Experience in Company and Business Law"
+        - "Service assists Indigenous People who need help with the law because of family violence"
+        - "**Can utilise Indigenous interpreter services**"
+    fees:
+        - "**Provides free legal service to eligible clients**"
+    service_area:
+        - 4
+        - 5
+    language: true
   - lawyer: Sam Ngai
     law_firm: Scammell & Co.
     address: 86 Franklin Street, Adelaide, South Australia 5000
