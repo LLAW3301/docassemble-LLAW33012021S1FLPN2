@@ -6,7 +6,7 @@ def regionToString(regions):
   
   # check if no regions were selected first
   if not True in regions.values():
-    return "none selected"
+    return "the areas you selected"
   
   for num, trueFalse in regions.items():
     if trueFalse == True:
