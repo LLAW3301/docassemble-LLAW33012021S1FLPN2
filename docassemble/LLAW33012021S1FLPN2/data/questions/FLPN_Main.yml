@@ -81,7 +81,11 @@ subquestion: |
   <br>Unfortunately, we weren't able to find any family lawyers in  <span class='answer'>${ regionToString(FLPNregion) }</span> who can provide services in <span class='answer'>languages other than English</span>. You can try searching in a different region, otherwise you will need to make your own enquiries into finding a family lawyer.<br><br>
   % endif:
   % else:
+  % if not True in FLPNregion.values():
+  <br>Unfortunately, we weren't able to find any matches as you have not selected a region in South Australia. You can try searching in a different region, otherwise you will need to make your own enquiries into finding a family lawyer<br><br>
+  % else:
   <br>Unfortunately, we weren't able to find any family lawyers in  <span class='answer'>${ regionToString(FLPNregion) }</span>. You can try searching in a different region, otherwise you will need to make your own enquiries into finding a family lawyer.<br><br>
+  % endif
   % endif  
   % endif
 
