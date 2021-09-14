@@ -122,7 +122,7 @@ data:
     service_area:
         - 4
         - 5
-    language: true
+    language: false
   - lawyer: Annette Comley
     law_firm: Comley Legal
     address: 146 Gilles Street, Adelaide, South Australia 5000
@@ -167,7 +167,7 @@ data:
       - "May defer fees on property matters"
     service_area:
       - 3
-    language: true
+    language: false
   - lawyer: Linda Gross
     law_firm: L.G. Lawyers
     address: 3/10 Gawler Street, Mount Barker, South Australia 5251
@@ -208,7 +208,7 @@ data:
       - "**Offers first consult free**"
     service_area:
       - 1
-    language: true
+    language: false
   - lawyer: Sam Lehman
     law_firm: Culshaw Miller Lawyers
     address: 49 Hindmarsh Square, Adelaide, South Australia 5000
@@ -332,7 +332,7 @@ data:
     service_area:
         - 4
         - 5
-    language: true
+    language: false
   - lawyer: Sam Ngai
     law_firm: Scammell & Co.
     address: 86 Franklin Street, Adelaide, South Australia 5000

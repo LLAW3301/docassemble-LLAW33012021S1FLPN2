@@ -18,9 +18,9 @@ buttons:
   - Continue: continue
   - Exit: exit
     url: https://www.pathwaysnetworksa.com.au
-section: WelcomeScreen
+# section: WelcomeScreen
 event: WelcomeScreen
-progress: 0
+# progress: 0
 undefine: FLPNprintout
 ---
 mandatory: true
@@ -43,13 +43,13 @@ buttons:
   - Yes, I agree: continue
   - No, I do not agree: exit
     url: https://www.pathwaysnetworksa.com.au
-section: FLPNdisclaimer
+# section: FLPNdisclaimer
 event: FLPNdisclaimer
-progress: 25
+# progress: 25
 undefine: FLPNprintout
 ---
 question: |
-  What region are you located in?
+  What local government area are you located in?
 subquestion: |
   Click the :question: icon to see what areas are included in each region.
 fields:
@@ -145,14 +145,14 @@ fields:
         - District Council of Barunga West
         - District Council of the Copper Coast
         - Yorke Peninsula Council.
-progress: 50
-section: LocQ
+# progress: 50
+# section: LocQ
 undefine: FLPNprintout
 ---
 question: |
   Do you require a lawyer who speaks a language other than English?
 yesno: FLPNlanguage
-progress: 75
-section: LanQ
+# progress: 75
+# section: LanQ
 undefine: FLPNprintout
 ---

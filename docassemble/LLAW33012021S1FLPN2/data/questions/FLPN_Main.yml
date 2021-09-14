@@ -1,7 +1,7 @@
 ---
 # The Family Law Pathways Logo on the top left
 objects:
-  - MJFlogo: DAStaticFile.using(filename='FLPN_logo4.png')
+  - MJFlogo: DAStaticFile.using(filename='familylaw_pathways_logo2.jpg')
 ---
 #dictates the size of the FLPN logo
 mandatory: true
@@ -66,8 +66,8 @@ buttons:
   - Exit: exit
     url: https://www.pathwaysnetworksa.com.au
   - Restart: restart
-progress: 100
-section: ResultScreen
+# progress: 100
+# section: ResultScreen
 ---
 #This is the final screen for the application
 event: endpoints['none_eligible']
@@ -97,6 +97,6 @@ buttons:
   - Exit: exit
     url: https://www.pathwaysnetworksa.com.au
   - Restart: restart
-progress: 100
-section: ResultScreen
+# progress: 100
+# section: ResultScreen
 ---

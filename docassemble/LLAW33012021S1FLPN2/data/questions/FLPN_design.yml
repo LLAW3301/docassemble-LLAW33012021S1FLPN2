@@ -31,7 +31,7 @@ features:
      # removes 'back' button from the menu bar
   question back button: True
      # creates a 'back' button next to the 'continue' button
-  progress bar: True
+  progress bar: False
   progress can go backwards: True
   show progress bar percentage: True
   navigation: horizontal
@@ -41,16 +41,16 @@ features:
   cache documents: false
 ---
 # Decides the page names for the navigation bar
-sections:
-  - WelcomeScreen: Welcome
-  - FLPNdisclaimer: Disclaimer
-  - LocQ: Location
-  - LanQ: Language
-  - ResultScreen: Results
+# sections:
+#   - WelcomeScreen: Welcome
+#   - FLPNdisclaimer: Disclaimer
+#   - LocQ: Location
+#   - LanQ: Language
+#   - ResultScreen: Results
 ---
 # The following two event blocks will make the sections on the navigation bar clickable
 event: LocQ
-section: LocQ
+# section: LocQ
   # There is a bug that prevents this event from working unless the regionToString(FLPNregion) is written in both the question line and the button line.
 question: |
   Location 
@@ -58,10 +58,10 @@ review:
   - Change: FLPNregion
     button: |
       You said you are located in <span class='answer'> ${ regionToString(FLPNregion) } </span> <br><br><br><br>
-progress: 50
+# progress: 50
 ---
 event: LanQ
-section: LanQ
+# section: LanQ
 question: |
   Language
 review:
@@ -73,7 +73,7 @@ review:
           You said you <span class='answer'>do not</span> require a lawyer who speaks a language other than English.
        % endif
        <br><br><br><br>
-progress: 75
+# progress: 75
 ---
 # allows pictures to be used as icons in text
 image sets:
@@ -103,7 +103,7 @@ default screen parts:
     <div style="margin: 5px"><img src="https://staff.flinders.edu.au/etc.clientlibs/flinders/clientlibs/clientlib-site/resources/images/flinderuni_main_logo_black.png" height="40"> </div>
     <div style="margin: 5px; text-align: center; color: rgb(102, 102, 102)">
     <cite><small><i>
-    Developed by Flinders University in<br>collaboration with Relationships Australia (SA) <br>________________________________________________ </div>
+    Developed by Flinders University in<br>collaboration with SA Family Law Pathways <br>________________________________________________ </div>
     </i></small></cite>
     <div style="text-align: center; color: rgb(173, 173, 173); font-size: 11px"> Icons provided by <a href='http://www.flaticon.com/authors/freepik'>Freepiks</a></div>
     </div>
